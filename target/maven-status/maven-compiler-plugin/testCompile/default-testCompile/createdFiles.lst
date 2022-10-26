@@ -1,0 +1,3 @@
+test\java\stepDefinitions\CommonTest.class
+test\java\stepDefinitions\Steps.class
+test\java\runners\TestRunner.class
