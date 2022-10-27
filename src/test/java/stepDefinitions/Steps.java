@@ -7,7 +7,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import main.java.pageEvents.*;
 import org.openqa.selenium.chrome.ChromeDriver;
