@@ -15,7 +15,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.http.HttpClient;
 import org.openqa.selenium.winium.WiniumDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
