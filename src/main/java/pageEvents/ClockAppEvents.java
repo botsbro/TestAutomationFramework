@@ -1,6 +1,5 @@
 package main.java.pageEvents;
 
-//import graphql.Assert;
 import main.java.pageObjects.CalculatorElements;
 import main.java.pageObjects.ClockAppElements;
 import main.java.utils.ElementFetch;

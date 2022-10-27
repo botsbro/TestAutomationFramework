@@ -1,6 +1,5 @@
 package main.java.pageEvents;
 
-//import graphql.Assert;
 import main.java.pageObjects.SettingsPageElements;
 import main.java.utils.ElementFetch;
 import org.testng.Assert;
