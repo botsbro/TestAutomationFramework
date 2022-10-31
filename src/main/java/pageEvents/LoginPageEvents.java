@@ -1,16 +1,15 @@
-package main.java.pageEvents;
+package pageEvents;
 
-import main.java.pageObjects.LoginPageElements;
-import main.java.utils.Constants;
-import main.java.utils.ElementFetch;
+import pageObjects.LoginPageElements;
+import utils.Constants;
+import utils.ElementFetch;
 import org.testng.Assert;
-import test.java.stepDefinitions.CommonTest;
+
 
 public class LoginPageEvents {
 
     public void verifyLoginPageIsOpen(String testType){
         ElementFetch elementFetch = new ElementFetch();
-        CommonTest.logger.info("Checking that login page is open");
         if ((testType.equalsIgnoreCase("chrome")) || (testType.equalsIgnoreCase("firefox"))) {
             Assert.assertTrue(elementFetch.getListWebElements("XPATH", LoginPageElements.loginText).size() > 0);
         }
@@ -21,7 +20,6 @@ public class LoginPageEvents {
 
     public void enterLoginCredentials(String testType){
         ElementFetch elementFetch = new ElementFetch();
-        CommonTest.logger.info("Entering email address");
         if ((testType.equalsIgnoreCase("chrome")) || (testType.equalsIgnoreCase("firefox"))) {
             elementFetch.getWebElement("ID", LoginPageElements.emailField).sendKeys(Constants.emailAddress);
             elementFetch.getWebElement("ID", LoginPageElements.loginButtonUsername).click();
@@ -37,7 +35,6 @@ public class LoginPageEvents {
 
     public void submitLoginCredentials(String testType){
         ElementFetch elementFetch = new ElementFetch();
-        CommonTest.logger.info("Clicking log in button");
         if ((testType.equalsIgnoreCase("chrome")) || (testType.equalsIgnoreCase("firefox"))) {
             elementFetch.getWebElement("ID", LoginPageElements.loginButtonPassword).click();
         }

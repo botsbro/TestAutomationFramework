@@ -1,4 +1,4 @@
-package main.java.utils;
+package utils;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

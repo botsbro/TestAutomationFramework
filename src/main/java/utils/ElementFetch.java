@@ -1,27 +1,30 @@
-package main.java.utils;
+package utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import test.java.stepDefinitions.CommonTest;
+//import stepDefinitions.CommonTest;
+import utils.DriverBuilder;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import static utils.DriverBuilder.*;
 
 public class ElementFetch {
 
     public WebElement getWebElement(String identifierType, String identifierValue){
         switch (identifierType){
             case "ID":
-                return CommonTest.driver.findElement(By.id(identifierValue));
+                return driver.findElement(By.id(identifierValue));
             case "CSS":
-                return CommonTest.driver.findElement(By.cssSelector(identifierValue));
+                return driver.findElement(By.cssSelector(identifierValue));
             case "NAME":
-                return CommonTest.driver.findElement(By.name(identifierValue));
+                return driver.findElement(By.name(identifierValue));
             case "XPATH":
-                return CommonTest.driver.findElement(By.xpath(identifierValue));
+                return driver.findElement(By.xpath(identifierValue));
             default:
                 return null;
         }
@@ -29,13 +32,13 @@ public class ElementFetch {
     public List<WebElement> getListWebElements(String identifierType, String identifierValue){
         switch (identifierType){
             case "ID":
-                return CommonTest.driver.findElements(By.id(identifierValue));
+                return driver.findElements(By.id(identifierValue));
             case "CSS":
-                return CommonTest.driver.findElements(By.cssSelector(identifierValue));
+                return driver.findElements(By.cssSelector(identifierValue));
             case "NAME":
-                return CommonTest.driver.findElements(By.name(identifierValue));
+                return driver.findElements(By.name(identifierValue));
             case "XPATH":
-                return CommonTest.driver.findElements(By.xpath(identifierValue));
+                return driver.findElements(By.xpath(identifierValue));
             default:
                 return null;
         }
@@ -43,13 +46,13 @@ public class ElementFetch {
     public WebElement getDesktopAppElement(String identifierType, String identifierValue){
         switch (identifierType){
             case "ID":
-                return CommonTest.desktopDriver.findElement(By.id(identifierValue));
+                return desktopDriver.findElement(By.id(identifierValue));
             case "CSS":
-                return CommonTest.desktopDriver.findElement(By.cssSelector(identifierValue));
+                return desktopDriver.findElement(By.cssSelector(identifierValue));
             case "TAGNAME":
-                return CommonTest.desktopDriver.findElement(By.tagName(identifierValue));
+                return desktopDriver.findElement(By.tagName(identifierValue));
             case "XPATH":
-                return CommonTest.desktopDriver.findElement(By.xpath(identifierValue));
+                return desktopDriver.findElement(By.xpath(identifierValue));
             default:
                 return null;
         }
@@ -57,13 +60,13 @@ public class ElementFetch {
     public List<WebElement> getListDesktopAppElements(String identifierType, String identifierValue){
         switch (identifierType){
             case "ID":
-                return CommonTest.desktopDriver.findElements(By.id(identifierValue));
+                return desktopDriver.findElements(By.id(identifierValue));
             case "CSS":
-                return CommonTest.desktopDriver.findElements(By.cssSelector(identifierValue));
+                return desktopDriver.findElements(By.cssSelector(identifierValue));
             case "TAGNAME":
-                return CommonTest.desktopDriver.findElements(By.tagName(identifierValue));
+                return desktopDriver.findElements(By.tagName(identifierValue));
             case "XPATH":
-                return CommonTest.desktopDriver.findElements(By.xpath(identifierValue));
+                return desktopDriver.findElements(By.xpath(identifierValue));
             default:
                 return null;
         }
@@ -71,13 +74,13 @@ public class ElementFetch {
     public WebElement getAndroidAppElement(String identifierType, String identifierValue){
         switch (identifierType){
             case "ID":
-                return CommonTest.androidDriver.findElement(By.id(identifierValue));
+                return androidDriver.findElement(By.id(identifierValue));
             case "CSS":
-                return CommonTest.androidDriver.findElement(By.cssSelector(identifierValue));
+                return androidDriver.findElement(By.cssSelector(identifierValue));
             case "TAGNAME":
-                return CommonTest.androidDriver.findElement(By.tagName(identifierValue));
+                return androidDriver.findElement(By.tagName(identifierValue));
             case "XPATH":
-                return CommonTest.androidDriver.findElement(By.xpath(identifierValue));
+                return androidDriver.findElement(By.xpath(identifierValue));
             default:
                 return null;
         }
@@ -85,13 +88,13 @@ public class ElementFetch {
     public List<WebElement> getListAndroidAppElements(String identifierType, String identifierValue){
         switch (identifierType){
             case "ID":
-                return CommonTest.androidDriver.findElements(By.id(identifierValue));
+                return androidDriver.findElements(By.id(identifierValue));
             case "CSS":
-                return CommonTest.androidDriver.findElements(By.cssSelector(identifierValue));
+                return androidDriver.findElements(By.cssSelector(identifierValue));
             case "TAGNAME":
-                return CommonTest.androidDriver.findElements(By.tagName(identifierValue));
+                return androidDriver.findElements(By.tagName(identifierValue));
             case "XPATH":
-                return CommonTest.androidDriver.findElements(By.xpath(identifierValue));
+                return androidDriver.findElements(By.xpath(identifierValue));
             default:
                 return null;
         }
@@ -100,7 +103,7 @@ public class ElementFetch {
     public WebElement waitForAppElement(String identifierType, String identifierValue, int timeToWait) {
         switch (identifierType) {
             case "ID":
-                WebElement elementToWaitFor = new WebDriverWait(CommonTest.androidDriver, Duration.ofSeconds(timeToWait)).until(ExpectedConditions.elementToBeClickable(By.id(identifierValue)));
+                WebElement elementToWaitFor = new WebDriverWait(androidDriver, Duration.ofSeconds(timeToWait)).until(ExpectedConditions.elementToBeClickable(By.id(identifierValue)));
                 return elementToWaitFor;
             default:
                 return null;
@@ -108,7 +111,7 @@ public class ElementFetch {
     }
 
     public void androidHardWait(int timeToWait) {
-        CommonTest.androidDriver.manage().timeouts().implicitlyWait(timeToWait, TimeUnit.SECONDS);
+        androidDriver.manage().timeouts().implicitlyWait(timeToWait, TimeUnit.SECONDS);
     }
 
 

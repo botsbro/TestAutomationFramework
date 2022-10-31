@@ -1,4 +1,4 @@
-package main.java.utils;
+package utils;
 
 public interface Constants {
     String url = "https://trello.com/";

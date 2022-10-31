@@ -1,4 +1,4 @@
-package main.java.utils;
+package utils;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -8,7 +8,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.ITestAnnotation;
-import test.java.stepDefinitions.CommonTest;
+import stepDefinitions.CommonTest;
 
 
 import java.io.File;

@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Sample Test Suite">
     <listeners>
-        <listener class-name="main.java.utils.SuiteListener"/>
+        <listener class-name="utils.SuiteListener"/>
     </listeners>
     <test name="Test Automation">
         <parameter name="testType" value="chrome"/>
         <classes>
-            <class name="test.java.runners.TestRunner"/>
+            <class name="runners.TestRunner"/>
         </classes>
     </test>
 </suite>

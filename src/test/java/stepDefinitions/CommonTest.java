@@ -1,4 +1,4 @@
-package test.java.stepDefinitions;
+package stepDefinitions;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -18,9 +18,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.winium.WiniumDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import main.java.utils.Constants;
+import utils.Constants;
 import org.openqa.selenium.winium.DesktopOptions;
-
+import utils.DriverBuilder;
 
 import java.awt.*;
 import java.io.File;
@@ -31,13 +31,49 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonTest {
 
-    public static WebDriver driver;
+    //public static WebDriver driver;
+    //public static WiniumDriver desktopDriver;
+    //public static AndroidDriver androidDriver;
     public static DesktopOptions options = new DesktopOptions();
-    public static WiniumDriver desktopDriver;
-    public static AndroidDriver androidDriver;
     public ExtentSparkReporter htmlReporter; //was ExtentHtmlReporter. Now called ExtentSparkReporter in extentreports ver 5.0.x
     public static ExtentReports extent;
     public static ExtentTest logger;
+
+    public void setupDriver(String testType) throws MalformedURLException, InterruptedException{
+
+        if (testType.equalsIgnoreCase("chrome")){
+            //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\chromedriver.exe");
+            DriverBuilder.driver = new ChromeDriver();
+        }else if (testType.equalsIgnoreCase("firefox")){
+            //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "geckodriver");
+            System.setProperty("webdriver.gecko.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\geckodriver.exe");
+            DriverBuilder.driver = new FirefoxDriver();
+        }
+        else if (testType.equalsIgnoreCase("desktop")){
+            System.setProperty("Winium.Desktop.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\Winium.Desktop.Driver.exe");
+            DriverBuilder.desktopDriver = new WiniumDriver(new URL("http://localhost:9999"), options);
+            options.setApplicationPath(Constants.appPath);
+        }
+        else if (testType.equalsIgnoreCase("android")){
+            DesiredCapabilities caps = new DesiredCapabilities();
+            caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
+            caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, Constants.phoneOSVersion);
+            caps.setCapability(MobileCapabilityType.DEVICE_NAME, Constants.phoneName);
+            caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
+            caps.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+            caps.setCapability("chromedriverExecutable", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\chromedriver.exe");
+            caps.setCapability(MobileCapabilityType.APP, "com.android." + Constants.mobileAppName);
+
+            URL url = new URL(Constants.appiumURL);
+            //System.setProperty("Winium.Desktop.driver", "C:\\Users\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\Winium.Desktop.Driver.exe");
+            DriverBuilder.androidDriver = new AndroidDriver<MobileElement>(url, caps);
+
+        }
+        else {
+
+        }
+    }
 
     @BeforeTest
     public void beforeTestMethod(){
@@ -56,50 +92,15 @@ public class CommonTest {
     public void beforeMethodMethod(String testType, Method testMethod) throws MalformedURLException, InterruptedException {
         logger = extent.createTest(testMethod.getName());
         setupDriver(testType);
-        driver.manage().window().maximize();
-        driver.get(Constants.url);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        desktopDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        DriverBuilder.driver.manage().window().maximize();
+        DriverBuilder.driver.get(Constants.url);
+        DriverBuilder.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        DriverBuilder.desktopDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterTest
     public void afterTestMethod() {
         extent.flush();
-    }
-    public void setupDriver(String testType) throws MalformedURLException, InterruptedException{
-
-        if (testType.equalsIgnoreCase("chrome")){
-            //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver");
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\chromedriver.exe");
-            driver = new ChromeDriver();
-        }else if (testType.equalsIgnoreCase("firefox")){
-            //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "geckodriver");
-            System.setProperty("webdriver.gecko.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\geckodriver.exe");
-            driver = new FirefoxDriver();
-        }
-        else if (testType.equalsIgnoreCase("desktop")){
-            System.setProperty("Winium.Desktop.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\Winium.Desktop.Driver.exe");
-            desktopDriver = new WiniumDriver(new URL("http://localhost:9999"), options);
-            options.setApplicationPath(Constants.appPath);
-        }
-        else if (testType.equalsIgnoreCase("android")){
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
-            caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, Constants.phoneOSVersion);
-            caps.setCapability(MobileCapabilityType.DEVICE_NAME, Constants.phoneName);
-            caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
-            caps.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-            caps.setCapability("chromedriverExecutable", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\chromedriver.exe");
-            caps.setCapability(MobileCapabilityType.APP, "com.android." + Constants.mobileAppName);
-
-            URL url = new URL(Constants.appiumURL);
-            //System.setProperty("Winium.Desktop.driver", "C:\\Users\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\Winium.Desktop.Driver.exe");
-            androidDriver = new AndroidDriver<MobileElement>(url, caps);
-
-        }
-        else {
-
-        }
     }
 
     @AfterMethod
@@ -122,8 +123,8 @@ public class CommonTest {
             Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
             logger.log(Status.SKIP,m);
         }
-        driver.quit();
-        desktopDriver.quit();
+        DriverBuilder.driver.quit();
+        DriverBuilder.desktopDriver.quit();
     }
 
 }

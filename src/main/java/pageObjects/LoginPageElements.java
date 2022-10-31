@@ -1,4 +1,4 @@
-package main.java.pageObjects;
+package pageObjects;
 
 public interface LoginPageElements {
     String loginText = "//h1[text()='Log in to Trello']";
