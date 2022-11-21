@@ -1,301 +1,112 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 1.087 s <<< FAILURE! - in TestSuite
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.103 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is requesting from https://api.zippopotam.us/gb/wa12' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
+Tests run: 25, Failures: 9, Errors: 0, Skipped: 16, Time elapsed: 9.462 s <<< FAILURE! - in TestSuite
+beforeMethodMethod(runners.WebRunner)  Time elapsed: 0.988 s  <<< FAILURE!
+java.lang.NoSuchMethodError: com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
+	at runners.WebRunner.setupDriver(WebRunner.java:49)
+	at runners.WebRunner.beforeMethodMethod(WebRunner.java:75)
 
-@Given("the user is requesting from https:\\/\\/api.zippopotam.us\\/gb\\/wa12")
-public void the_user_is_requesting_from_https_api_zippopotam_us_gb_wa12() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user sends an API request")
-public void the_user_sends_an_api_request() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return details for Earlestown")
-public void the_api_should_return_details_for_earlestown() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+beforeMethodMethod(runners.DesktopRunner)  Time elapsed: 4.903 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.winium.WiniumDriver
+Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
+Capabilities {}
+	at runners.DesktopRunner.setupDriver(DesktopRunner.java:50)
+	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:70)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
+	at runners.DesktopRunner.setupDriver(DesktopRunner.java:50)
+	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:70)
+Caused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
+Caused by: java.net.ConnectException: Connection refused: no further information
 
+beforeMethodMethod(runners.AndroidRunner)  Time elapsed: 0.037 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/remote/internal/JsonToWebElementConverter
+	at runners.AndroidRunner.setupDriver(AndroidRunner.java:53)
+	at runners.AndroidRunner.beforeMethodMethod(AndroidRunner.java:72)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.internal.JsonToWebElementConverter
+	at runners.AndroidRunner.setupDriver(AndroidRunner.java:53)
+	at runners.AndroidRunner.beforeMethodMethod(AndroidRunner.java:72)
 
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.001 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is requesting from https://api.zippopotam.us/gb/wa12' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
+runScenario(runners.ApiRunner)  Time elapsed: 2.062 s  <<< FAILURE!
+java.lang.IllegalArgumentException: 
+Invalid JSON expression:
+Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
+                            ['place name']
+                             ^
 
-@Given("the user is requesting from https:\\/\\/api.zippopotam.us\\/gb\\/wa12")
-public void the_user_is_requesting_from_https_api_zippopotam_us_gb_wa12() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user sends an API request")
-public void the_user_sends_an_api_request() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return details for Newton-le-Willows")
-public void the_api_should_return_details_for_newton_le_willows() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+1 error
 
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
+startup failed:
+Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
+   restAssuredJsonRootObject.['place name']
+                             ^
 
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.004 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is requesting from "https://api.zippopotam.us/gb/eng/chorley"' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is requesting from {string}")
-public void the_user_is_requesting_from(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user sends an API request")
-public void the_user_sends_an_api_request() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return details for {string}")
-public void the_api_should_return_details_for(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return the postcode {string}")
-public void the_api_should_return_the_postcode(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+1 error
 
 
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is requesting from <URL>' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
+runScenario(runners.ApiRunner)  Time elapsed: 0.638 s  <<< FAILURE!
+java.lang.IllegalArgumentException: 
+Invalid JSON expression:
+Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
+                            ['place name']
+                             ^
 
-@Given("the user is requesting from <URL>")
-public void the_user_is_requesting_from_url() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user sends an API request")
-public void the_user_sends_an_api_request() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return a HTTP status code of {string}")
-public void the_api_should_return_a_http_status_code_of(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+1 error
+
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
+startup failed:
+Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
+   restAssuredJsonRootObject.['place name']
+                             ^
+
+1 error
 
 
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is requesting from https://api.zippopotam.us/gb/eng/earlestown' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
+runScenario(runners.ApiRunner)  Time elapsed: 0.01 s  <<< FAILURE!
+java.net.MalformedURLException: no protocol: "https://api.zippopotam.us/gb/eng/chorley"
 
-@Given("the user is requesting from https:\\/\\/api.zippopotam.us\\/gb\\/eng\\/earlestown")
-public void the_user_is_requesting_from_https_api_zippopotam_us_gb_eng_earlestown() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user sends an API request")
-public void the_user_sends_an_api_request() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return details for Earlestown")
-public void the_api_should_return_details_for_earlestown() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return the postcode WA12")
-public void the_api_should_return_the_postcode_wa12() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+runScenario(runners.ApiRunner)  Time elapsed: 0.01 s  <<< FAILURE!
+java.net.URISyntaxException: Illegal character in path at index 0: <URL>
+
+runScenario(runners.ApiRunner)  Time elapsed: 0.275 s  <<< FAILURE!
+java.lang.IllegalArgumentException: 
+Invalid JSON expression:
+Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
+                            ['place name']
+                             ^
+
+1 error
+
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
+startup failed:
+Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
+   restAssuredJsonRootObject.['place name']
+                             ^
+
+1 error
 
 
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is requesting from https://api.zippopotam.us/gb/eng/chorley' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
+runScenario(runners.ApiRunner)  Time elapsed: 0.328 s  <<< FAILURE!
+java.lang.IllegalArgumentException: 
+Invalid JSON expression:
+Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
+                            ['place name']
+                             ^
 
-@Given("the user is requesting from https:\\/\\/api.zippopotam.us\\/gb\\/eng\\/chorley")
-public void the_user_is_requesting_from_https_api_zippopotam_us_gb_eng_chorley() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user sends an API request")
-public void the_user_sends_an_api_request() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return details for Chorley")
-public void the_api_should_return_details_for_chorley() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the API should return the postcode PR7")
-public void the_api_should_return_the_postcode_pr7() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+1 error
 
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
+startup failed:
+Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
+   restAssuredJsonRootObject.['place name']
+                             ^
 
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.003 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the clock app is open' and 5 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the clock app is open")
-public void the_clock_app_is_open() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user goes to the Timer tab")
-public void the_user_goes_to_the_timer_tab() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("sets a {int} second timer")
-public void sets_a_second_timer(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("clicks the play button")
-public void clicks_the_play_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("waits {int} seconds")
-public void waits_seconds(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user will be prompted to stop the timer")
-public void the_user_will_be_prompted_to_stop_the_timer() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.003 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the calculator is open' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the calculator is open")
-public void the_calculator_is_open() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user multiplies two numbers")
-public void the_user_multiplies_two_numbers() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("clicks equals")
-public void clicks_equals() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the two numbers should be multiplied correctly")
-public void the_two_numbers_should_be_multiplied_correctly() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is on the dashboard page' and 4 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the dashboard page")
-public void the_user_is_on_the_dashboard_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user clicks on the create board button")
-public void the_user_clicks_on_the_create_board_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("enters a name for the board")
-public void enters_a_name_for_the_board() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("clicks the second create button")
-public void clicks_the_second_create_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("a board should be created and the user should be taken to the board page")
-public void a_board_should_be_created_and_the_user_should_be_taken_to_the_board_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.001 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is on the login page' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the login page")
-public void the_user_is_on_the_login_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user enters valid credentials")
-public void the_user_enters_valid_credentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("clicks submit")
-public void clicks_submit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user should be logged in")
-public void the_user_should_be_logged_in() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-runScenario(test.java.runners.TestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'the user is on the dashboard page' and 3 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the user is on the dashboard page")
-public void the_user_is_on_the_dashboard_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("the user clicks on the account dropdown button")
-public void the_user_clicks_on_the_account_dropdown_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("clicks settings")
-public void clicks_settings() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("the user should be taken to the settings page")
-public void the_user_should_be_taken_to_the_settings_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+1 error
 
 

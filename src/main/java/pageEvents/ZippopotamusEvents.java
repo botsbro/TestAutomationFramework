@@ -31,7 +31,7 @@ public class ZippopotamusEvents {
     }
 
     public void checkForCorrectPlaceName(String expectedPlaceName){
-        String returnedPlace = jsonPathFromApiResponse.get("place name");
+        String returnedPlace = jsonPathFromApiResponse.get("['place name']");
         //Assert.assertEquals(apiResponseBodyAsString.contains(expectedPlaceName), true);
         Assert.assertEquals(returnedPlace, expectedPlaceName);
     }

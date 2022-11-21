@@ -5,9 +5,11 @@
         <listener class-name="utils.SuiteListener"/>
     </listeners>
     <test name="Test Automation">
-        <parameter name="testType" value="chrome"/>
         <classes>
-            <class name="runners.TestRunner"/>
+            <class name="runners.WebRunner"/>
+            <class name="runners.DesktopRunner"/>
+            <class name="runners.AndroidRunner"/>
+            <class name="runners.ApiRunner"/>
         </classes>
     </test>
 </suite>

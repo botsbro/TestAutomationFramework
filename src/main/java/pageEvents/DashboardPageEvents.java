@@ -7,12 +7,12 @@ import org.testng.Assert;
 
 public class DashboardPageEvents {
 
-    public void verifyDashboardPageIsOpen(String browserName){
+    public void verifyDashboardPageIsOpen(){
         ElementFetch elementFetch = new ElementFetch();
-        if ((browserName.equalsIgnoreCase("chrome")) || (browserName.equalsIgnoreCase("firefox"))) {
+        if ((Constants.testType.equalsIgnoreCase("chrome")) || (Constants.testType.equalsIgnoreCase("firefox"))) {
             Assert.assertTrue(elementFetch.getListWebElements("ID", DashboardPageElements.navBar).size() > 0);
         }
-        else if (browserName.equalsIgnoreCase("android")){
+        else if (Constants.testType.equalsIgnoreCase("android")){
             Assert.assertTrue(elementFetch.getListAndroidAppElements("ID", DashboardPageElements.navBar).size() > 0);
         }
     }

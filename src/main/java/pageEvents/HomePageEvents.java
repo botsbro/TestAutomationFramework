@@ -1,14 +1,15 @@
 package pageEvents;
 
 import pageObjects.HomePageElements;
+import utils.Constants;
 import utils.ElementFetch;
 
 public class HomePageEvents {
-    public void clickOnSignInButton(String testType){
+    public void clickOnSignInButton(){
         ElementFetch elementFetch = new ElementFetch();
-        if ((testType.equalsIgnoreCase("chrome")) || (testType.equalsIgnoreCase("firefox"))){
+        if ((Constants.testType.equalsIgnoreCase("chrome")) || (Constants.testType.equalsIgnoreCase("firefox"))){
             elementFetch.getWebElement("XPATH", HomePageElements.signInButton).click();
-        }else if (testType.equalsIgnoreCase("android")){
+        }else if (Constants.testType.equalsIgnoreCase("android")){
             elementFetch.getAndroidAppElement("XPATH", HomePageElements.mobileMenuButton).click();
             elementFetch.getAndroidAppElement("XPATH", HomePageElements.mobileSignInButton).click();
         }

@@ -1,4 +1,4 @@
-package stepDefinitions;
+package runners;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -11,7 +11,10 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.WebDriver;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+import cucumber.api.testng.TestNGCucumberRunner;
+import cucumber.api.testng.CucumberFeatureWrapper;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -19,25 +22,27 @@ import org.openqa.selenium.winium.WiniumDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utils.Constants;
-import org.openqa.selenium.winium.DesktopOptions;
 import utils.DriverBuilder;
 
-import java.awt.*;
 import java.io.File;
 import java.lang.reflect.Method;
-import java.net.URL;
 import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-public class CommonTest {
+@CucumberOptions(
+        features = "src/test/resources/webFeatures/",
+        glue = {"stepDefinitions", "runners"},
+        monochrome = true,
+        tags = ""
+)
+public class WebRunner extends AbstractTestNGCucumberTests{
 
-    /*public static DesktopOptions options = new DesktopOptions();
     public ExtentSparkReporter htmlReporter; //was ExtentHtmlReporter. Now called ExtentSparkReporter in extentreports ver 5.0.x
     public static ExtentReports extent;
     public static ExtentTest logger;
-
     public void setupDriver(String testType) throws MalformedURLException, InterruptedException{
-
         if (testType.equalsIgnoreCase("chrome")){
             //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver");
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\chromedriver.exe");
@@ -47,30 +52,13 @@ public class CommonTest {
             System.setProperty("webdriver.gecko.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\geckodriver.exe");
             DriverBuilder.driver = new FirefoxDriver();
         }
-        else if (testType.equalsIgnoreCase("desktop")){
-            System.setProperty("Winium.Desktop.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\Winium.Desktop.Driver.exe");
-            DriverBuilder.desktopDriver = new WiniumDriver(new URL("http://localhost:9999"), options);
-            options.setApplicationPath(Constants.appPath);
-        }
-        else if (testType.equalsIgnoreCase("android")){
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
-            caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, Constants.phoneOSVersion);
-            caps.setCapability(MobileCapabilityType.DEVICE_NAME, Constants.phoneName);
-            caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
-            caps.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-            caps.setCapability("chromedriverExecutable", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\chromedriver.exe");
-            caps.setCapability(MobileCapabilityType.APP, "com.android." + Constants.mobileAppName);
-            URL url = new URL(Constants.appiumURL);
-            //System.setProperty("Winium.Desktop.driver", "C:\\Users\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\Winium.Desktop.Driver.exe");
-            DriverBuilder.androidDriver = new AndroidDriver<MobileElement>(url, caps);
-        }
         else {
         }
     }
 
     @BeforeTest
     public void beforeTestMethod(){
+        Constants.testType = Constants.browser;
         htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + File.separator + "reports" + File.separator + "AutomationReport.html");
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setDocumentTitle("Automation Report");
@@ -116,6 +104,6 @@ public class CommonTest {
             logger.log(Status.SKIP,m);
         }
         DriverBuilder.driver.quit();
-    }*/
+    }
 
 }

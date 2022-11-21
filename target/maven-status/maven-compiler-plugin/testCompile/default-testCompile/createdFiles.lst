@@ -1,3 +1,8 @@
-test\java\stepDefinitions\CommonTest.class
-test\java\stepDefinitions\Steps.class
-test\java\runners\TestRunner.class
+runners\DesktopRunner.class
+runners\TestRunner.class
+stepDefinitions\Steps.class
+stepDefinitions\CommonTest.class
+runners\WebRunner.class
+runners\AndroidRunner.class
+runners\ApiRunner.class
+utils\SuiteListener.class

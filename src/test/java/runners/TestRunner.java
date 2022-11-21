@@ -1,11 +1,23 @@
 package runners;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import cucumber.api.testng.TestNGCucumberRunner;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import org.testng.annotations.*;
+import utils.Constants;
 
+import java.io.File;
 import java.util.Arrays;
 
 @CucumberOptions(
@@ -14,33 +26,10 @@ import java.util.Arrays;
         monochrome = true,
         tags = ""
 )
+
 public class TestRunner extends AbstractTestNGCucumberTests{
 
-    private TestNGCucumberRunner testNGCucumberRunner;
 
-    @BeforeClass(alwaysRun = true)
-    public void SetUpClass() throws Exception {
-        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-    }
-
-    @Test(groups = "cucumber", description = "Runs cucumber feature", dataProvider = "provideFeatures")
-    public void featureGet(CucumberFeatureWrapper cucumberFeature){
-        testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
-    }
-
-    @DataProvider
-    public Object[][] provideFeatures(){
-        if(testNGCucumberRunner == null){
-            testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-        }
-        System.out.println(Arrays.deepToString(testNGCucumberRunner.provideFeatures()));
-        return testNGCucumberRunner.provideFeatures();
-    }
-
-    @AfterClass(alwaysRun = true)
-    public void finishClass() throws Exception {
-        testNGCucumberRunner.finish();
-    }
 
 
 }

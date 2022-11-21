@@ -28,33 +28,28 @@ public class Steps extends CommonTest {
 
     //Trello login
     @Given("the user is on the login page")
-    @Parameters(value = {"testType"})
-    public void check_user_is_on_login_page (String testType) {
-        PageBuilder.homePageEvents.clickOnSignInButton(testType);
-        PageBuilder.loginPageEvents.verifyLoginPageIsOpen(testType);
+    public void check_user_is_on_login_page () {
+        PageBuilder.homePageEvents.clickOnSignInButton();
+        PageBuilder.loginPageEvents.verifyLoginPageIsOpen();
     }
     @When("the user enters valid credentials")
-    @Parameters(value = {"testType"})
-    public void enter_login_credentials(String testType) {
-        PageBuilder.loginPageEvents.enterLoginCredentials(testType);
+    public void enter_login_credentials() {
+        PageBuilder.loginPageEvents.enterLoginCredentials();
     }
     @And("clicks submit")
-    @Parameters(value = {"testType"})
-    public void click_login_submit(String testType) {
-        PageBuilder.loginPageEvents.submitLoginCredentials(testType);
+    public void click_login_submit() {
+        PageBuilder.loginPageEvents.submitLoginCredentials();
     }
     @Then("the user should be logged in")
-    @Parameters(value = {"testType"})
-    public void check_user_is_logged_in(String testType) {
-        PageBuilder.dashboardPageEvents.verifyDashboardPageIsOpen(testType);
+    public void check_user_is_logged_in() {
+        PageBuilder.dashboardPageEvents.verifyDashboardPageIsOpen();
     }
 
 
     //Trello go to settings
     @Given("the user is on the dashboard page")
-    @Parameters(value = {"testType"})
-    public void check_user_is_on_dashboard_page(String testType) {
-        PageBuilder.dashboardPageEvents.verifyDashboardPageIsOpen(testType);
+    public void check_user_is_on_dashboard_page() {
+        PageBuilder.dashboardPageEvents.verifyDashboardPageIsOpen();
     }
     @When("the user clicks on the account dropdown button")
     public void click_account_dropdown() {
