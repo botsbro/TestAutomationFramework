@@ -1,4 +1,4 @@
-package pageObjects;
+package utils.pageObjects;
 
 public interface SettingsPageElements {
 

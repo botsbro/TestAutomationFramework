@@ -1,300 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="6" ignored="0" total="11" passed="0">
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample Test Suite" duration-ms="8918" started-at="2022-11-20T23:25:08 GMT" finished-at="2022-11-20T23:25:17 GMT">
+  <suite name="Sample Test Suite" duration-ms="19183" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:35 GMT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.AndroidRunner@f7c8c1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@a35978]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@6279ee]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test Automation" duration-ms="8918" started-at="2022-11-20T23:25:08 GMT" finished-at="2022-11-20T23:25:17 GMT">
-      <class name="runners.DesktopRunner">
-        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.DesktopRunner@a35978]" name="beforeTestMethod" is-config="true" duration-ms="1" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.DesktopRunner@a35978]" name="setUpClass" is-config="true" duration-ms="5" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.DesktopRunner@a35978]" name="beforeMethodMethod" is-config="true" duration-ms="4885" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.winium.WiniumDriver
-Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
-Capabilities {}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.winium.WiniumDriver
-Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
-Capabilities {}
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
-at org.openqa.selenium.winium.WiniumDriver.<init>(WiniumDriver.java:84)
-at runners.DesktopRunner.setupDriver(DesktopRunner.java:50)
-at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:70)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.winium.WiniumDriverCommandExecutor.execute(WiniumDriverCommandExecutor.java:78)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-... 41 more
-Caused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
-at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
-at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
-at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
-at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
-at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
-at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.lang.Thread.run(Thread.java:748)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-Caused by: java.net.ConnectException: Connection refused: no further information
-at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="SKIP" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.DesktopRunner@a35978]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:14 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@a35978]" name="runScenario" duration-ms="0" started-at="2022-11-20T23:25:14 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:14 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able multiply two numbers together"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Multiply]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.winium.WiniumDriver
-Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
-Capabilities {}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.winium.WiniumDriver
-Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
-Capabilities {}
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
-at org.openqa.selenium.winium.WiniumDriver.<init>(WiniumDriver.java:84)
-at runners.DesktopRunner.setupDriver(DesktopRunner.java:50)
-at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:70)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.winium.WiniumDriverCommandExecutor.execute(WiniumDriverCommandExecutor.java:78)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-... 41 more
-Caused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
-at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
-at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
-at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
-at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
-at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
-at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.lang.Thread.run(Thread.java:748)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-Caused by: java.net.ConnectException: Connection refused: no further information
-at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.DesktopRunner@a35978]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2022-11-20T23:25:14 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="SKIP" signature="afterTestMethod()[pri:0, instance:runners.DesktopRunner@a35978]" name="afterTestMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-      </class> <!-- runners.DesktopRunner -->
+    <test name="Test Automation" duration-ms="19183" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:35 GMT">
       <class name="runners.WebRunner">
-        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.WebRunner@6279ee]" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.WebRunner@1d66ad3]" name="beforeTestMethod" is-config="true" duration-ms="197" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:16 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.WebRunner@6279ee]" name="setUpClass" is-config="true" duration-ms="255" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.WebRunner@1d66ad3]" name="setUpClass" is-config="true" duration-ms="214" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:16 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@6279ee]" name="beforeMethodMethod" is-config="true" duration-ms="79" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1d66ad3]" name="beforeMethodMethod" is-config="true" duration-ms="3191" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:20 GMT">
           <params>
             <param index="0">
               <value>
@@ -302,62 +26,10 @@ at java.lang.Thread.run(Thread.java:748)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA[com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
-at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:98)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:93)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-at runners.WebRunner.setupDriver(WebRunner.java:49)
-at runners.WebRunner.beforeMethodMethod(WebRunner.java:75)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@6279ee]" name="runScenario" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3]" name="runScenario" duration-ms="2583" started-at="2022-11-28T01:47:20 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-28T01:47:22 GMT">
           <params>
             <param index="0">
               <value>
@@ -370,70 +42,75 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoSuchMethodError">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d180b61f44e62a634147748c1cfb2cc3, sendKeysToElement {id=32cc40ac-1adf-477f-abc0-cd0be51cbab1, value=[Ljava.lang.CharSequence;@523d46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55154/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d180b61f44e62a634147748c1cfb2cc3)] -> xpath: //input[@id='password']]
+Session ID: d180b61f44e62a634147748c1cfb2cc3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
-at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:98)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:93)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-at runners.WebRunner.setupDriver(WebRunner.java:49)
-at runners.WebRunner.beforeMethodMethod(WebRunner.java:75)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d180b61f44e62a634147748c1cfb2cc3, sendKeysToElement {id=32cc40ac-1adf-477f-abc0-cd0be51cbab1, value=[Ljava.lang.CharSequence;@523d46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55154/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d180b61f44e62a634147748c1cfb2cc3)] -> xpath: //input[@id='password']]
+Session ID: d180b61f44e62a634147748c1cfb2cc3
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
+at stepDefinitions.Steps.check_user_is_on_dashboard_page(Steps.java:53)
+at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloCreateBoard.feature:3)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="SKIP" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@6279ee]" name="beforeMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="SKIP" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@6279ee]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1d66ad3]" name="afterMethodMethod" is-config="true" duration-ms="677" started-at="2022-11-28T01:47:22 GMT" finished-at="2022-11-28T01:47:23 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@6279ee]" name="runScenario" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1d66ad3]" name="beforeMethodMethod" is-config="true" duration-ms="2135" started-at="2022-11-28T01:47:23 GMT" finished-at="2022-11-28T01:47:25 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3]" name="runScenario" duration-ms="3387" started-at="2022-11-28T01:47:25 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-28T01:47:28 GMT">
           <params>
             <param index="0">
               <value>
@@ -446,74 +123,75 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoSuchMethodError">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [de55869922f08c523ef39da46140cc97, sendKeysToElement {id=4e546717-ee12-429f-ba33-6b057f936144, value=[Ljava.lang.CharSequence;@1271176}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55233/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (de55869922f08c523ef39da46140cc97)] -> xpath: //input[@id='password']]
+Session ID: de55869922f08c523ef39da46140cc97]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
-at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:98)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:93)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-at runners.WebRunner.setupDriver(WebRunner.java:49)
-at runners.WebRunner.beforeMethodMethod(WebRunner.java:75)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [de55869922f08c523ef39da46140cc97, sendKeysToElement {id=4e546717-ee12-429f-ba33-6b057f936144, value=[Ljava.lang.CharSequence;@1271176}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55233/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (de55869922f08c523ef39da46140cc97)] -> xpath: //input[@id='password']]
+Session ID: de55869922f08c523ef39da46140cc97
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
+at stepDefinitions.Steps.enter_login_credentials(Steps.java:36)
+at ✽.the user enters valid credentials(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloLogin.feature:4)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="SKIP" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@6279ee]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1d66ad3]" name="afterMethodMethod" is-config="true" duration-ms="653" started-at="2022-11-28T01:47:28 GMT" finished-at="2022-11-28T01:47:29 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method status="SKIP" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@6279ee]" name="beforeMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1d66ad3]" name="beforeMethodMethod" is-config="true" duration-ms="2310" started-at="2022-11-28T01:47:29 GMT" finished-at="2022-11-28T01:47:31 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.WebRunner@6279ee]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@6279ee]" name="runScenario" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3]" name="runScenario" duration-ms="2800" started-at="2022-11-28T01:47:31 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-28T01:47:34 GMT">
           <params>
             <param index="0">
               <value>
@@ -526,1273 +204,72 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoSuchMethodError">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3d54255b467601e9e303e2a809fc8c2, sendKeysToElement {id=bd300e37-1de1-4015-95d1-4c80105ba41c, value=[Ljava.lang.CharSequence;@b0a000}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55325/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b3d54255b467601e9e303e2a809fc8c2)] -> xpath: //input[@id='password']]
+Session ID: b3d54255b467601e9e303e2a809fc8c2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
-at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:98)
-at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:93)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
-at runners.WebRunner.setupDriver(WebRunner.java:49)
-at runners.WebRunner.beforeMethodMethod(WebRunner.java:75)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3d54255b467601e9e303e2a809fc8c2, sendKeysToElement {id=bd300e37-1de1-4015-95d1-4c80105ba41c, value=[Ljava.lang.CharSequence;@b0a000}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55325/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b3d54255b467601e9e303e2a809fc8c2)] -> xpath: //input[@id='password']]
+Session ID: b3d54255b467601e9e303e2a809fc8c2
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
+at stepDefinitions.Steps.check_user_is_on_dashboard_page(Steps.java:53)
+at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloSettings.feature:3)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="SKIP" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@6279ee]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1d66ad3]" name="afterMethodMethod" is-config="true" duration-ms="640" started-at="2022-11-28T01:47:34 GMT" finished-at="2022-11-28T01:47:35 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method status="SKIP" signature="afterTestMethod()[pri:0, instance:runners.WebRunner@6279ee]" name="afterTestMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.WebRunner@1d66ad3]" name="tearDownClass" is-config="true" duration-ms="26" started-at="2022-11-28T01:47:35 GMT" finished-at="2022-11-28T01:47:35 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="afterTestMethod()[pri:0, instance:runners.WebRunner@1d66ad3]" name="afterTestMethod" is-config="true" duration-ms="326" started-at="2022-11-28T01:47:35 GMT" finished-at="2022-11-28T01:47:35 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- runners.WebRunner -->
-      <class name="runners.ApiRunner">
-        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.ApiRunner@10a87b3]" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:09 GMT" finished-at="2022-11-20T23:25:09 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.ApiRunner@10a87b3]" name="setUpClass" is-config="true" duration-ms="25" started-at="2022-11-20T23:25:14 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.ApiRunner@10a87b3]" name="beforeMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:14 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3]" name="runScenario" duration-ms="2060" started-at="2022-11-20T23:25:14 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:16 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to retrieve the postcode of a place by its name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Fetch place name]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:286)
-at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)
-at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
-at pageEvents.ZippopotamusEvents.checkForCorrectPlaceName(ZippopotamusEvents.java:34)
-at stepDefinitions.Steps.check_for_correct_place_name(Steps.java:135)
-at ?.the API should return details for Earlestown(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/apiFeatures/ZippopotamusGetPlaceByPostcode.feature:5)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
-   restAssuredJsonRootObject.['place name']
-                             ^
-
-1 error
-
-at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:287)
-at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:143)
-at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4557)
-at org.apache.groovy.parser.antlr4.AstBuilder.access$000(AstBuilder.java:341)
-at org.apache.groovy.parser.antlr4.AstBuilder$1.syntaxError(AstBuilder.java:4572)
-at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
-at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543)
-at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154)
-at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportNoViableAlternative(DescriptiveErrorStrategy.java:92)
-at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recover(DescriptiveErrorStrategy.java:53)
-at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6900)
-at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:499)
-at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:408)
-at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:355)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:405)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:384)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:424)
-at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
-at org.codehaus.groovy.control.SourceUnit.convert(SourceUnit.java:244)
-at org.codehaus.groovy.control.CompilationUnit.lambda$addPhaseOperations$1(CompilationUnit.java:191)
-at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:880)
-at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:650)
-at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:627)
-at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389)
-at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332)
-at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
-at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
-at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330)
-at groovy.lang.GroovyShell.parseClass(GroovyShell.java:530)
-at groovy.lang.GroovyShell.parse(GroovyShell.java:542)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:430)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:465)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:440)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:182)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
-at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
-at pageEvents.ZippopotamusEvents.checkForCorrectPlaceName(ZippopotamusEvents.java:34)
-at stepDefinitions.Steps.check_for_correct_place_name(Steps.java:135)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:134)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:131)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.ApiRunner@10a87b3]" name="afterMethodMethod" is-config="true" duration-ms="5" started-at="2022-11-20T23:25:16 GMT" finished-at="2022-11-20T23:25:16 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3]" name="runScenario" duration-ms="637" started-at="2022-11-20T23:25:16 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to retrieve the postcode of a place by its name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Fetch place name]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:286)
-at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)
-at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
-at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
-at pageEvents.ZippopotamusEvents.checkForCorrectPlaceName(ZippopotamusEvents.java:34)
-at stepDefinitions.Steps.check_for_correct_place_name(Steps.java:135)
-at ?.the API should return details for Newton-le-Willows(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/apiFeatures/ZippopotamusGetPlaceByPostcode.feature:5)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
-   restAssuredJsonRootObject.['place name']
-                             ^
-
-1 error
-
-at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:287)
-at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:143)
-at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4557)
-at org.apache.groovy.parser.antlr4.AstBuilder.access$000(AstBuilder.java:341)
-at org.apache.groovy.parser.antlr4.AstBuilder$1.syntaxError(AstBuilder.java:4572)
-at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
-at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543)
-at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154)
-at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportNoViableAlternative(DescriptiveErrorStrategy.java:92)
-at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recover(DescriptiveErrorStrategy.java:53)
-at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6900)
-at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:499)
-at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:408)
-at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:355)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:405)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:384)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:424)
-at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
-at org.codehaus.groovy.control.SourceUnit.convert(SourceUnit.java:244)
-at org.codehaus.groovy.control.CompilationUnit.lambda$addPhaseOperations$1(CompilationUnit.java:191)
-at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:880)
-at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:650)
-at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:627)
-at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389)
-at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332)
-at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
-at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
-at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330)
-at groovy.lang.GroovyShell.parseClass(GroovyShell.java:530)
-at groovy.lang.GroovyShell.parse(GroovyShell.java:542)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:430)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:465)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:440)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:182)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
-at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
-at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
-at pageEvents.ZippopotamusEvents.checkForCorrectPlaceName(ZippopotamusEvents.java:34)
-at stepDefinitions.Steps.check_for_correct_place_name(Steps.java:135)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:134)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:131)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.ApiRunner@10a87b3]" name="beforeMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:16 GMT" finished-at="2022-11-20T23:25:16 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.ApiRunner@10a87b3]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.ApiRunner@10a87b3]" name="beforeMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3]" name="runScenario" duration-ms="10" started-at="2022-11-20T23:25:17 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to retrieve the postcode of a place by its name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Fetch postcode]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.net.MalformedURLException">
-            <message>
-              <![CDATA[no protocol: "https://api.zippopotam.us/gb/eng/chorley"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.MalformedURLException: no protocol: "https://api.zippopotam.us/gb/eng/chorley"
-at java.net.URL.<init>(URL.java:593)
-at java.net.URL.<init>(URL.java:490)
-at java.net.URL.<init>(URL.java:439)
-at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.RequestSpecificationImpl.getTargetURI(RequestSpecificationImpl.groovy:1543)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.RequestSpecificationImpl.partiallyApplyPathParams(RequestSpecificationImpl.groovy:1683)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.newFilterContext(RequestSpecificationImpl.groovy:1063)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1653)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-at io.restassured.RestAssured.get(RestAssured.java:720)
-at pageEvents.ZippopotamusEvents.sendApiRequest(ZippopotamusEvents.java:26)
-at stepDefinitions.Steps.send_API_request(Steps.java:131)
-at ?.the user sends an API request(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/apiFeatures/ZippopotamusGetPostcodeByPlace.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.MalformedURLException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.ApiRunner@10a87b3]" name="afterMethodMethod" is-config="true" duration-ms="1" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3]" name="runScenario" duration-ms="9" started-at="2022-11-20T23:25:17 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["A valid API request should return an OK HTTP status code"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Fetch postcode]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.net.URISyntaxException">
-            <message>
-              <![CDATA[Illegal character in path at index 0: <URL>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.net.URISyntaxException: Illegal character in path at index 0: <URL>
-at java.net.URI$Parser.fail(URI.java:2848)
-at java.net.URI$Parser.checkChars(URI.java:3021)
-at java.net.URI$Parser.parseHierarchical(URI.java:3105)
-at java.net.URI$Parser.parse(URI.java:3063)
-at java.net.URI.<init>(URI.java:588)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.RequestSpecificationImpl.getTargetPath(RequestSpecificationImpl.groovy:1359)
-at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.RequestSpecificationImpl.partiallyApplyPathParams(RequestSpecificationImpl.groovy:1684)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.newFilterContext(RequestSpecificationImpl.groovy:1063)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1653)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
-at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
-at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
-at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
-at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-at io.restassured.RestAssured.get(RestAssured.java:720)
-at pageEvents.ZippopotamusEvents.sendApiRequest(ZippopotamusEvents.java:26)
-at stepDefinitions.Steps.send_API_request(Steps.java:131)
-at ?.the user sends an API request(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/apiFeatures/ZippopotamusGetPostcodeByPlace.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.net.URISyntaxException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.ApiRunner@10a87b3]" name="beforeMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.ApiRunner@10a87b3]" name="beforeMethodMethod" is-config="true" duration-ms="1" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.ApiRunner@10a87b3]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3]" name="runScenario" duration-ms="273" started-at="2022-11-20T23:25:17 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to retrieve the postcode of a place by its name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Fetch postcode]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:286)
-at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)
-at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
-at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
-at pageEvents.ZippopotamusEvents.checkForCorrectPlaceName(ZippopotamusEvents.java:34)
-at stepDefinitions.Steps.check_for_correct_place_name(Steps.java:135)
-at ?.the API should return details for Earlestown(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/apiFeatures/ZippopotamusGetPostcodeByPlace.feature:17)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
-   restAssuredJsonRootObject.['place name']
-                             ^
-
-1 error
-
-at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:287)
-at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:143)
-at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4557)
-at org.apache.groovy.parser.antlr4.AstBuilder.access$000(AstBuilder.java:341)
-at org.apache.groovy.parser.antlr4.AstBuilder$1.syntaxError(AstBuilder.java:4572)
-at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
-at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543)
-at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154)
-at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportNoViableAlternative(DescriptiveErrorStrategy.java:92)
-at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recover(DescriptiveErrorStrategy.java:53)
-at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6900)
-at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:499)
-at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:408)
-at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:355)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:405)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:384)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:424)
-at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
-at org.codehaus.groovy.control.SourceUnit.convert(SourceUnit.java:244)
-at org.codehaus.groovy.control.CompilationUnit.lambda$addPhaseOperations$1(CompilationUnit.java:191)
-at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:880)
-at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:650)
-at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:627)
-at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389)
-at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332)
-at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
-at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
-at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330)
-at groovy.lang.GroovyShell.parseClass(GroovyShell.java:530)
-at groovy.lang.GroovyShell.parse(GroovyShell.java:542)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:430)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:465)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:440)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:182)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
-at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
-at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
-at pageEvents.ZippopotamusEvents.checkForCorrectPlaceName(ZippopotamusEvents.java:34)
-at stepDefinitions.Steps.check_for_correct_place_name(Steps.java:135)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:134)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:131)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.ApiRunner@10a87b3]" name="afterMethodMethod" is-config="true" duration-ms="2" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.ApiRunner@10a87b3]" name="beforeMethodMethod" is-config="true" duration-ms="1" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3]" name="runScenario" duration-ms="328" started-at="2022-11-20T23:25:17 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to retrieve the postcode of a place by its name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Fetch postcode]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:286)
-at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)
-at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
-at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
-at pageEvents.ZippopotamusEvents.checkForCorrectPlaceName(ZippopotamusEvents.java:34)
-at stepDefinitions.Steps.check_for_correct_place_name(Steps.java:135)
-at ?.the API should return details for Chorley(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/apiFeatures/ZippopotamusGetPostcodeByPlace.feature:17)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
-   restAssuredJsonRootObject.['place name']
-                             ^
-
-1 error
-
-at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:287)
-at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:143)
-at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4557)
-at org.apache.groovy.parser.antlr4.AstBuilder.access$000(AstBuilder.java:341)
-at org.apache.groovy.parser.antlr4.AstBuilder$1.syntaxError(AstBuilder.java:4572)
-at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
-at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543)
-at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154)
-at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportNoViableAlternative(DescriptiveErrorStrategy.java:92)
-at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recover(DescriptiveErrorStrategy.java:53)
-at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:6900)
-at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:499)
-at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:408)
-at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:355)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:405)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:384)
-at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:424)
-at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
-at org.codehaus.groovy.control.SourceUnit.convert(SourceUnit.java:244)
-at org.codehaus.groovy.control.CompilationUnit.lambda$addPhaseOperations$1(CompilationUnit.java:191)
-at org.codehaus.groovy.control.CompilationUnit$ISourceUnitOperation.doPhaseOperation(CompilationUnit.java:880)
-at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:650)
-at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:627)
-at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389)
-at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332)
-at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
-at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
-at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330)
-at groovy.lang.GroovyShell.parseClass(GroovyShell.java:530)
-at groovy.lang.GroovyShell.parse(GroovyShell.java:542)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:430)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:465)
-at groovy.lang.GroovyShell.evaluate(GroovyShell.java:440)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:182)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
-at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
-at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
-at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
-at pageEvents.ZippopotamusEvents.checkForCorrectPlaceName(ZippopotamusEvents.java:34)
-at stepDefinitions.Steps.check_for_correct_place_name(Steps.java:135)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:134)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:131)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.ApiRunner@10a87b3]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@10a87b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.ApiRunner@10a87b3]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="SKIP" signature="afterTestMethod()[pri:0, instance:runners.ApiRunner@10a87b3]" name="afterTestMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-      </class> <!-- runners.ApiRunner -->
-      <class name="runners.AndroidRunner">
-        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.AndroidRunner@f7c8c1]" name="beforeTestMethod" is-config="true" duration-ms="245" started-at="2022-11-20T23:25:08 GMT" finished-at="2022-11-20T23:25:09 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.AndroidRunner@f7c8c1]" name="setUpClass" is-config="true" duration-ms="8" started-at="2022-11-20T23:25:14 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.AndroidRunner@f7c8c1]" name="beforeMethodMethod" is-config="true" duration-ms="27" started-at="2022-11-20T23:25:14 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/openqa/selenium/remote/internal/JsonToWebElementConverter]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/remote/internal/JsonToWebElementConverter
-at runners.AndroidRunner.setupDriver(AndroidRunner.java:53)
-at runners.AndroidRunner.beforeMethodMethod(AndroidRunner.java:72)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.internal.JsonToWebElementConverter
-at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
-at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-... 38 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.AndroidRunner@f7c8c1]" name="runScenario" duration-ms="0" started-at="2022-11-20T23:25:14 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-20T23:25:14 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to set an alarm clock"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Create alarm clock]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/openqa/selenium/remote/internal/JsonToWebElementConverter]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/remote/internal/JsonToWebElementConverter
-at runners.AndroidRunner.setupDriver(AndroidRunner.java:53)
-at runners.AndroidRunner.beforeMethodMethod(AndroidRunner.java:72)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.internal.JsonToWebElementConverter
-at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
-at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-... 38 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.AndroidRunner@f7c8c1]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2022-11-20T23:25:14 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="SKIP" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.AndroidRunner@f7c8c1]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:14 GMT" finished-at="2022-11-20T23:25:14 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="SKIP" signature="afterTestMethod()[pri:0, instance:runners.AndroidRunner@f7c8c1]" name="afterTestMethod" is-config="true" duration-ms="0" started-at="2022-11-20T23:25:17 GMT" finished-at="2022-11-20T23:25:17 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-      </class> <!-- runners.AndroidRunner -->
     </test> <!-- Test Automation -->
   </suite> <!-- Sample Test Suite -->
 </testng-results>

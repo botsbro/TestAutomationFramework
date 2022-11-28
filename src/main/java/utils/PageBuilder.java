@@ -21,7 +21,6 @@ public final class PageBuilder {
 
     private static void buildPages()
     {
-
         boardPageEvents = new pageEvents.BoardPageEvents();
         calculatorEvents = new pageEvents.CalculatorEvents();
         clockAppEvents = new pageEvents.ClockAppEvents();
@@ -30,7 +29,6 @@ public final class PageBuilder {
         loginPageEvents = new pageEvents.LoginPageEvents();
         settingsPageEvents = new pageEvents.SettingsPageEvents();
         zippopotamusEvents = new pageEvents.ZippopotamusEvents();
-
     }
 
 }

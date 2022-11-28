@@ -1,112 +1,43 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 25, Failures: 9, Errors: 0, Skipped: 16, Time elapsed: 9.462 s <<< FAILURE! - in TestSuite
-beforeMethodMethod(runners.WebRunner)  Time elapsed: 0.988 s  <<< FAILURE!
-java.lang.NoSuchMethodError: com.google.common.collect.ImmutableMap.of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
-	at runners.WebRunner.setupDriver(WebRunner.java:49)
-	at runners.WebRunner.beforeMethodMethod(WebRunner.java:75)
-
-beforeMethodMethod(runners.DesktopRunner)  Time elapsed: 4.903 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 19.604 s <<< FAILURE! - in TestSuite
+runScenario(runners.WebRunner)  Time elapsed: 2.591 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.winium.WiniumDriver
-Command: [null, newSession {capabilities=[Capabilities {}], desiredCapabilities=Capabilities {}}]
-Capabilities {}
-	at runners.DesktopRunner.setupDriver(DesktopRunner.java:50)
-	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:70)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-	at runners.DesktopRunner.setupDriver(DesktopRunner.java:50)
-	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:70)
-Caused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:9999
-Caused by: java.net.ConnectException: Connection refused: no further information
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d180b61f44e62a634147748c1cfb2cc3, sendKeysToElement {id=32cc40ac-1adf-477f-abc0-cd0be51cbab1, value=[Ljava.lang.CharSequence;@523d46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55154/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d180b61f44e62a634147748c1cfb2cc3)] -> xpath: //input[@id='password']]
+Session ID: d180b61f44e62a634147748c1cfb2cc3
 
-beforeMethodMethod(runners.AndroidRunner)  Time elapsed: 0.037 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: org/openqa/selenium/remote/internal/JsonToWebElementConverter
-	at runners.AndroidRunner.setupDriver(AndroidRunner.java:53)
-	at runners.AndroidRunner.beforeMethodMethod(AndroidRunner.java:72)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.internal.JsonToWebElementConverter
-	at runners.AndroidRunner.setupDriver(AndroidRunner.java:53)
-	at runners.AndroidRunner.beforeMethodMethod(AndroidRunner.java:72)
+runScenario(runners.WebRunner)  Time elapsed: 3.388 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [de55869922f08c523ef39da46140cc97, sendKeysToElement {id=4e546717-ee12-429f-ba33-6b057f936144, value=[Ljava.lang.CharSequence;@1271176}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55233/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (de55869922f08c523ef39da46140cc97)] -> xpath: //input[@id='password']]
+Session ID: de55869922f08c523ef39da46140cc97
 
-runScenario(runners.ApiRunner)  Time elapsed: 2.062 s  <<< FAILURE!
-java.lang.IllegalArgumentException: 
-Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
-startup failed:
-Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
-   restAssuredJsonRootObject.['place name']
-                             ^
-
-1 error
-
-
-runScenario(runners.ApiRunner)  Time elapsed: 0.638 s  <<< FAILURE!
-java.lang.IllegalArgumentException: 
-Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
-startup failed:
-Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
-   restAssuredJsonRootObject.['place name']
-                             ^
-
-1 error
-
-
-runScenario(runners.ApiRunner)  Time elapsed: 0.01 s  <<< FAILURE!
-java.net.MalformedURLException: no protocol: "https://api.zippopotam.us/gb/eng/chorley"
-
-runScenario(runners.ApiRunner)  Time elapsed: 0.01 s  <<< FAILURE!
-java.net.URISyntaxException: Illegal character in path at index 0: <URL>
-
-runScenario(runners.ApiRunner)  Time elapsed: 0.275 s  <<< FAILURE!
-java.lang.IllegalArgumentException: 
-Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
-startup failed:
-Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
-   restAssuredJsonRootObject.['place name']
-                             ^
-
-1 error
-
-
-runScenario(runners.ApiRunner)  Time elapsed: 0.328 s  <<< FAILURE!
-java.lang.IllegalArgumentException: 
-Invalid JSON expression:
-Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
-                            ['place name']
-                             ^
-
-1 error
-
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: 
-startup failed:
-Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
-   restAssuredJsonRootObject.['place name']
-                             ^
-
-1 error
-
+runScenario(runners.WebRunner)  Time elapsed: 2.801 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.122)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3d54255b467601e9e303e2a809fc8c2, sendKeysToElement {id=bd300e37-1de1-4015-95d1-4c80105ba41c, value=[Ljava.lang.CharSequence;@b0a000}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55325/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b3d54255b467601e9e303e2a809fc8c2)] -> xpath: //input[@id='password']]
+Session ID: b3d54255b467601e9e303e2a809fc8c2
 

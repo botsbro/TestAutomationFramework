@@ -1,6 +1,6 @@
 package pageEvents;
 
-import pageObjects.HomePageElements;
+import utils.pageObjects.HomePageElements;
 import utils.Constants;
 import utils.ElementFetch;
 

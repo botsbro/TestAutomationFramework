@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import gherkin.lexer.Ca;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.And;
@@ -8,23 +7,13 @@ import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
-import pageEvents.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.*;
-import org.testng.annotations.Test;
 import io.restassured.response.Response;
-import stepDefinitions.CommonTest;
 import utils.PageBuilder;
-
-
 import static io.restassured.RestAssured.*;
-
 import java.lang.reflect.Method;
 
 public class Steps extends CommonTest {
-
 
     //Trello login
     @Given("the user is on the login page")
@@ -49,6 +38,10 @@ public class Steps extends CommonTest {
     //Trello go to settings
     @Given("the user is on the dashboard page")
     public void check_user_is_on_dashboard_page() {
+        PageBuilder.homePageEvents.clickOnSignInButton();
+        PageBuilder.loginPageEvents.verifyLoginPageIsOpen();
+        PageBuilder.loginPageEvents.enterLoginCredentials();
+        PageBuilder.loginPageEvents.submitLoginCredentials();
         PageBuilder.dashboardPageEvents.verifyDashboardPageIsOpen();
     }
     @When("the user clicks on the account dropdown button")

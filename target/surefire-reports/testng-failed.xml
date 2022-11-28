@@ -12,44 +12,11 @@
           <include name="setUpClass"/>
           <include name="afterTestMethod"/>
           <include name="beforeMethodMethod"/>
-          <include name="runScenario"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2"/>
           <include name="beforeTestMethod"/>
         </methods>
       </class> <!-- runners.WebRunner -->
-      <class name="runners.DesktopRunner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="afterTestMethod"/>
-          <include name="beforeMethodMethod"/>
-          <include name="afterMethodMethod"/>
-          <include name="runScenario"/>
-          <include name="tearDownClass"/>
-          <include name="beforeTestMethod"/>
-        </methods>
-      </class> <!-- runners.DesktopRunner -->
-      <class name="runners.AndroidRunner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="beforeMethodMethod"/>
-          <include name="beforeTestMethod"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario"/>
-          <include name="afterMethodMethod"/>
-          <include name="afterTestMethod"/>
-        </methods>
-      </class> <!-- runners.AndroidRunner -->
-      <class name="runners.ApiRunner">
-        <methods>
-          <include name="afterTestMethod"/>
-          <include name="setUpClass"/>
-          <include name="beforeMethodMethod"/>
-          <include name="beforeTestMethod"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="tearDownClass"/>
-          <include name="afterMethodMethod"/>
-        </methods>
-      </class> <!-- runners.ApiRunner -->
     </classes>
   </test> <!-- Test Automation(failed) -->
 </suite> <!-- Failed suite [Sample Test Suite] -->

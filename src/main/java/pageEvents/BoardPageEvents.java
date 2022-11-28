@@ -1,6 +1,6 @@
 package pageEvents;
 
-import pageObjects.BoardPageElements;
+import utils.pageObjects.BoardPageElements;
 import utils.ElementFetch;
 import org.testng.Assert;
 

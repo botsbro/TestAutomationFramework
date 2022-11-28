@@ -8,28 +8,23 @@ import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import cucumber.api.testng.TestNGCucumberRunner;
-import cucumber.api.testng.CucumberFeatureWrapper;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.winium.WiniumDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utils.Constants;
 import utils.DriverBuilder;
-
 import java.io.File;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
+//import static utils.DriverBuilder.*;
+
 
 @CucumberOptions(
         features = "src/test/resources/webFeatures/",
@@ -42,14 +37,13 @@ public class WebRunner extends AbstractTestNGCucumberTests{
     public ExtentSparkReporter htmlReporter; //was ExtentHtmlReporter. Now called ExtentSparkReporter in extentreports ver 5.0.x
     public static ExtentReports extent;
     public static ExtentTest logger;
+
     public void setupDriver(String testType) throws MalformedURLException, InterruptedException{
         if (testType.equalsIgnoreCase("chrome")){
-            //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver");
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "chromedriver.exe");
             DriverBuilder.driver = new ChromeDriver();
         }else if (testType.equalsIgnoreCase("firefox")){
-            //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "geckodriver");
-            System.setProperty("webdriver.gecko.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "geckodriver.exe");
             DriverBuilder.driver = new FirefoxDriver();
         }
         else {

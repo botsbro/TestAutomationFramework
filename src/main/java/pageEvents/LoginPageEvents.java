@@ -1,6 +1,6 @@
 package pageEvents;
 
-import pageObjects.LoginPageElements;
+import utils.pageObjects.LoginPageElements;
 import utils.Constants;
 import utils.ElementFetch;
 import org.testng.Assert;

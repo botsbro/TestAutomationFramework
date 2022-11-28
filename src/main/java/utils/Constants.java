@@ -9,7 +9,7 @@ public class Constants {
     public static String phoneName = "Pixel_5";
     public static String mobileAppName = "deskclock"; //try "chrome" or "deskclock"
     public static String phoneOSVersion = "13";
-    public static String nameOfTester = "Tom Botsford"; //name that gets displayed on extent report
+    public static String nameOfTester = System.getProperty("user.name"); //name that gets displayed on extent report
     public static String testType = "";
     public static String browser = "chrome";
 }

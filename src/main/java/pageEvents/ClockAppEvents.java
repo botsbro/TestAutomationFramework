@@ -1,6 +1,6 @@
 package pageEvents;
 
-import pageObjects.ClockAppElements;
+import utils.pageObjects.ClockAppElements;
 import utils.ElementFetch;
 import org.testng.Assert;
 

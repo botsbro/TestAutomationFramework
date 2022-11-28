@@ -1,6 +1,6 @@
 package pageEvents;
 
-import pageObjects.DashboardPageElements;
+import utils.pageObjects.DashboardPageElements;
 import utils.Constants;
 import utils.ElementFetch;
 import org.testng.Assert;

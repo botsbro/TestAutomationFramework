@@ -12,8 +12,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import cucumber.api.testng.TestNGCucumberRunner;
-import cucumber.api.testng.CucumberFeatureWrapper;
+
 import org.testng.annotations.*;
 import utils.Constants;
 

@@ -7,9 +7,9 @@
     <test name="Test Automation">
         <classes>
             <class name="runners.WebRunner"/>
-            <class name="runners.DesktopRunner"/>
-            <class name="runners.AndroidRunner"/>
-            <class name="runners.ApiRunner"/>
+            <!-- <class name="runners.DesktopRunner"/> -->
+            <!-- <class name="runners.AndroidRunner"/> -->
+           <!-- <class name="runners.ApiRunner"/> -->
         </classes>
     </test>
 </suite>

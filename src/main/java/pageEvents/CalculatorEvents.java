@@ -1,7 +1,6 @@
 package pageEvents;
 
-import pageObjects.CalculatorElements;
-import utils.Constants;
+import utils.pageObjects.CalculatorElements;
 import utils.ElementFetch;
 import org.testng.Assert;
 
