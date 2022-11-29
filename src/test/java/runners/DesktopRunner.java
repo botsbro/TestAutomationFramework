@@ -8,23 +8,20 @@ import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.winium.DesktopOptions;
 import org.openqa.selenium.winium.WiniumDriver;
+import org.openqa.selenium.winium.WiniumDriverService;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utils.Constants;
 import utils.DriverBuilder;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -43,11 +40,26 @@ public class DesktopRunner extends AbstractTestNGCucumberTests{
     public ExtentSparkReporter htmlReporter; //was ExtentHtmlReporter. Now called ExtentSparkReporter in extentreports ver 5.0.x
     public static ExtentReports extent;
     public static ExtentTest logger;
+    public static File driverPath = new File(System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "Winium.Desktop.Driver.exe");
+    public WiniumDriverService service;
 
-    public void setupDriver() throws MalformedURLException, InterruptedException{
-        System.setProperty("Winium.Desktop.driver", "C:\\Users\\tom\\IdeaProjects\\TomBotsfordAutomationFramework2022\\drivers\\Winium.Desktop.Driver.exe");
-        DriverBuilder.desktopDriver = new WiniumDriver(new URL("http://localhost:9999"), options);
+    public void setupDriver() throws IOException, InterruptedException{
+        System.setProperty("Winium.Desktop.driver", System.getProperty("user.dir") + File.separator + "drivers" + File.separator + "Winium.Desktop.Driver.exe");
         options.setApplicationPath(Constants.appPath);
+        service = new WiniumDriverService.Builder().usingDriverExecutable(driverPath).usingPort(9999).withVerbose(true).withSilent(false).buildDesktopService();
+        try
+        {
+            service.start();
+        }
+        catch (IOException e)
+        {
+            System.out.println("Exception while starting WINIUM service");
+            e.printStackTrace();
+        }
+
+        //DriverBuilder.desktopDriver = new WiniumDriver(new URL("http://localhost:9999"), options);
+        DriverBuilder.desktopDriver = new WiniumDriver(service, options);
+
     }
 
     @BeforeTest
@@ -64,10 +76,10 @@ public class DesktopRunner extends AbstractTestNGCucumberTests{
     }
 
     @BeforeMethod
-    public void beforeMethodMethod(Method testMethod) throws MalformedURLException, InterruptedException {
+    public void beforeMethodMethod(Method testMethod) throws IOException, InterruptedException {
         logger = extent.createTest(testMethod.getName());
         setupDriver();
-        DriverBuilder.desktopDriver.manage().window().maximize();
+        //DriverBuilder.desktopDriver.manage().window().maximize();
         DriverBuilder.desktopDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
@@ -96,6 +108,7 @@ public class DesktopRunner extends AbstractTestNGCucumberTests{
             Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
             logger.log(Status.SKIP,m);
         }
+        service.stop();
         DriverBuilder.desktopDriver.quit();
     }
 }

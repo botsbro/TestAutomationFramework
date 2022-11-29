@@ -23,11 +23,13 @@ public class LoginPageEvents {
         if ((Constants.testType.equalsIgnoreCase("chrome")) || (Constants.testType.equalsIgnoreCase("firefox"))) {
             elementFetch.getWebElement("ID", LoginPageElements.emailField).sendKeys(Constants.emailAddress);
             elementFetch.getWebElement("ID", LoginPageElements.loginButtonUsername).click();
+            Assert.assertTrue(elementFetch.getListWebElements("XPATH", LoginPageElements.passwordScreenText).size() > 0);
             elementFetch.getWebElement("ID", LoginPageElements.passwordField).sendKeys(Constants.password);
         }
         else if (Constants.testType.equalsIgnoreCase("android")){
             elementFetch.getAndroidAppElement("ID", LoginPageElements.emailField).sendKeys(Constants.emailAddress);
             elementFetch.getAndroidAppElement("ID", LoginPageElements.loginButtonUsername).click();
+            Assert.assertTrue(elementFetch.getListWebElements("XPATH", LoginPageElements.passwordScreenText).size() > 0);
             elementFetch.getAndroidAppElement("ID", LoginPageElements.passwordField).sendKeys(Constants.password);
         }
 

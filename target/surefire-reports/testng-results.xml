@@ -1,24 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample Test Suite" duration-ms="19183" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:35 GMT">
+  <suite name="Sample Test Suite" duration-ms="31650" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:41 GMT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@123a213]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test Automation" duration-ms="19183" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:35 GMT">
-      <class name="runners.WebRunner">
-        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.WebRunner@1d66ad3]" name="beforeTestMethod" is-config="true" duration-ms="197" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:16 GMT">
+    <test name="Test Automation" duration-ms="31650" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:41 GMT">
+      <class name="runners.DesktopRunner">
+        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.DesktopRunner@123a213]" name="beforeTestMethod" is-config="true" duration-ms="201" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:10 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.WebRunner@1d66ad3]" name="setUpClass" is-config="true" duration-ms="214" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:16 GMT">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.DesktopRunner@123a213]" name="setUpClass" is-config="true" duration-ms="17" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1364212]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1d66ad3]" name="beforeMethodMethod" is-config="true" duration-ms="3191" started-at="2022-11-28T01:47:16 GMT" finished-at="2022-11-28T01:47:20 GMT">
+        <test-method status="FAIL" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.DesktopRunner@123a213]" name="beforeMethodMethod" is-config="true" duration-ms="1" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
+at org.openqa.selenium.winium.WiniumDriverService.<init>(WiniumDriverService.java:114)
+at org.openqa.selenium.winium.WiniumDriverService$Builder.buildDesktopService(WiniumDriverService.java:191)
+at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
+at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@123a213]" name="runScenario" duration-ms="0" started-at="2022-11-29T01:45:41 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-29T01:45:41 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able multiply two numbers together"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Multiply"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
+at org.openqa.selenium.winium.WiniumDriverService.<init>(WiniumDriverService.java:114)
+at org.openqa.selenium.winium.WiniumDriverService$Builder.buildDesktopService(WiniumDriverService.java:191)
+at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
+at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="SKIP" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.DesktopRunner@123a213]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.DesktopRunner@123a213]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="SKIP" signature="afterTestMethod()[pri:0, instance:runners.DesktopRunner@123a213]" name="afterTestMethod" is-config="true" duration-ms="0" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- runners.DesktopRunner -->
+      <class name="runners.WebRunner">
+        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.WebRunner@1cd19b3]" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:10 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.WebRunner@1cd19b3]" name="setUpClass" is-config="true" duration-ms="182" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:10 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1364212]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1cd19b3]" name="beforeMethodMethod" is-config="true" duration-ms="3486" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:14 GMT">
           <params>
             <param index="0">
               <value>
@@ -29,7 +191,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3]" name="runScenario" duration-ms="2583" started-at="2022-11-28T01:47:20 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-28T01:47:22 GMT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3]" name="runScenario" duration-ms="8155" started-at="2022-11-29T01:45:14 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-29T01:45:22 GMT">
           <params>
             <param index="0">
               <value>
@@ -38,68 +200,25 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Create board]"]]>
+                <![CDATA["Create board"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d180b61f44e62a634147748c1cfb2cc3, sendKeysToElement {id=32cc40ac-1adf-477f-abc0-cd0be51cbab1, value=[Ljava.lang.CharSequence;@523d46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55154/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d180b61f44e62a634147748c1cfb2cc3)] -> xpath: //input[@id='password']]
-Session ID: d180b61f44e62a634147748c1cfb2cc3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d180b61f44e62a634147748c1cfb2cc3, sendKeysToElement {id=32cc40ac-1adf-477f-abc0-cd0be51cbab1, value=[Ljava.lang.CharSequence;@523d46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55154/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d180b61f44e62a634147748c1cfb2cc3)] -> xpath: //input[@id='password']]
-Session ID: d180b61f44e62a634147748c1cfb2cc3
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-at stepDefinitions.Steps.check_user_is_on_dashboard_page(Steps.java:53)
-at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloCreateBoard.feature:3)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1d66ad3]" name="afterMethodMethod" is-config="true" duration-ms="677" started-at="2022-11-28T01:47:22 GMT" finished-at="2022-11-28T01:47:23 GMT">
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1cd19b3]" name="afterMethodMethod" is-config="true" duration-ms="682" started-at="2022-11-29T01:45:22 GMT" finished-at="2022-11-29T01:45:23 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3] output={null}]]]>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1d66ad3]" name="beforeMethodMethod" is-config="true" duration-ms="2135" started-at="2022-11-28T01:47:23 GMT" finished-at="2022-11-28T01:47:25 GMT">
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1cd19b3]" name="beforeMethodMethod" is-config="true" duration-ms="2071" started-at="2022-11-29T01:45:23 GMT" finished-at="2022-11-29T01:45:25 GMT">
           <params>
             <param index="0">
               <value>
@@ -110,7 +229,7 @@ at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBo
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3]" name="runScenario" duration-ms="3387" started-at="2022-11-28T01:47:25 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-28T01:47:28 GMT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3]" name="runScenario" duration-ms="6427" started-at="2022-11-29T01:45:25 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-29T01:45:31 GMT">
           <params>
             <param index="0">
               <value>
@@ -119,68 +238,25 @@ at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBo
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login]"]]>
+                <![CDATA["Login"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [de55869922f08c523ef39da46140cc97, sendKeysToElement {id=4e546717-ee12-429f-ba33-6b057f936144, value=[Ljava.lang.CharSequence;@1271176}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55233/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (de55869922f08c523ef39da46140cc97)] -> xpath: //input[@id='password']]
-Session ID: de55869922f08c523ef39da46140cc97]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [de55869922f08c523ef39da46140cc97, sendKeysToElement {id=4e546717-ee12-429f-ba33-6b057f936144, value=[Ljava.lang.CharSequence;@1271176}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55233/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (de55869922f08c523ef39da46140cc97)] -> xpath: //input[@id='password']]
-Session ID: de55869922f08c523ef39da46140cc97
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-at stepDefinitions.Steps.enter_login_credentials(Steps.java:36)
-at ✽.the user enters valid credentials(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloLogin.feature:4)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1d66ad3]" name="afterMethodMethod" is-config="true" duration-ms="653" started-at="2022-11-28T01:47:28 GMT" finished-at="2022-11-28T01:47:29 GMT">
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1cd19b3]" name="afterMethodMethod" is-config="true" duration-ms="663" started-at="2022-11-29T01:45:31 GMT" finished-at="2022-11-29T01:45:32 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3] output={null}]]]>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1d66ad3]" name="beforeMethodMethod" is-config="true" duration-ms="2310" started-at="2022-11-28T01:47:29 GMT" finished-at="2022-11-28T01:47:31 GMT">
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1cd19b3]" name="beforeMethodMethod" is-config="true" duration-ms="2292" started-at="2022-11-29T01:45:32 GMT" finished-at="2022-11-29T01:45:34 GMT">
           <params>
             <param index="0">
               <value>
@@ -191,7 +267,7 @@ at ✽.the user enters valid credentials(file:///C:/Users/tom/IdeaProjects/TomBo
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3]" name="runScenario" duration-ms="2800" started-at="2022-11-28T01:47:31 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-28T01:47:34 GMT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3]" name="runScenario" duration-ms="6777" started-at="2022-11-29T01:45:34 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-29T01:45:41 GMT">
           <params>
             <param index="0">
               <value>
@@ -200,72 +276,29 @@ at ✽.the user enters valid credentials(file:///C:/Users/tom/IdeaProjects/TomBo
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Open Settings]"]]>
+                <![CDATA["Open Settings"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3d54255b467601e9e303e2a809fc8c2, sendKeysToElement {id=bd300e37-1de1-4015-95d1-4c80105ba41c, value=[Ljava.lang.CharSequence;@b0a000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55325/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b3d54255b467601e9e303e2a809fc8c2)] -> xpath: //input[@id='password']]
-Session ID: b3d54255b467601e9e303e2a809fc8c2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3d54255b467601e9e303e2a809fc8c2, sendKeysToElement {id=bd300e37-1de1-4015-95d1-4c80105ba41c, value=[Ljava.lang.CharSequence;@b0a000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55325/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b3d54255b467601e9e303e2a809fc8c2)] -> xpath: //input[@id='password']]
-Session ID: b3d54255b467601e9e303e2a809fc8c2
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-at stepDefinitions.Steps.check_user_is_on_dashboard_page(Steps.java:53)
-at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloSettings.feature:3)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1d66ad3]" name="afterMethodMethod" is-config="true" duration-ms="640" started-at="2022-11-28T01:47:34 GMT" finished-at="2022-11-28T01:47:35 GMT">
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1cd19b3]" name="afterMethodMethod" is-config="true" duration-ms="653" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1d66ad3] output={null}]]]>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.WebRunner@1d66ad3]" name="tearDownClass" is-config="true" duration-ms="26" started-at="2022-11-28T01:47:35 GMT" finished-at="2022-11-28T01:47:35 GMT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.WebRunner@1cd19b3]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="afterTestMethod()[pri:0, instance:runners.WebRunner@1d66ad3]" name="afterTestMethod" is-config="true" duration-ms="326" started-at="2022-11-28T01:47:35 GMT" finished-at="2022-11-28T01:47:35 GMT">
+        <test-method status="SKIP" signature="afterTestMethod()[pri:0, instance:runners.WebRunner@1cd19b3]" name="afterTestMethod" is-config="true" duration-ms="0" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->

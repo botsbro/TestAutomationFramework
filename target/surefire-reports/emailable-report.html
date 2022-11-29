@@ -9,78 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Sample Test Suite</th></tr>
-<tr><td><a href="#t0">Test Automation</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">19,183</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test Automation</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">31,650</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Automation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">runners.WebRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1669600040080</td><td rowspan="3">2583</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Automation &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">runners.DesktopRunner</td><td><a href="#m0">beforeMethodMethod</a></td><td rowspan="1">1669686341980</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test Automation &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">runners.DesktopRunner</td><td><a href="#m1">afterMethodMethod</a></td><td rowspan="1">1669686341989</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">afterTestMethod</a></td><td rowspan="1">1669686341990</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">runners.WebRunner</td><td><a href="#m3">afterTestMethod</a></td><td rowspan="1">1669686341990</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test Automation &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">runners.DesktopRunner</td><td><a href="#m4">runScenario</a></td><td rowspan="1">1669686341988</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test Automation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">runners.WebRunner</td><td><a href="#m5">runScenario</a></td><td rowspan="3">1669686334523</td><td rowspan="3">6777</td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr></tbody>
 </table>
-<h2>Test Automation</h2><h3 id="m0">runners.WebRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to go to create a new board from the dashboard page&quot;</td><td>&quot;Optional[Create board]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-79BEL83&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d180b61f44e62a634147748c1cfb2cc3, sendKeysToElement {id=32cc40ac-1adf-477f-abc0-cd0be51cbab1, value=[Ljava.lang.CharSequence;@523d46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55154/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d180b61f44e62a634147748c1cfb2cc3)] -&gt; xpath: //input[@id=&apos;password&apos;]]
-Session ID: d180b61f44e62a634147748c1cfb2cc3
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-	at stepDefinitions.Steps.check_user_is_on_dashboard_page(Steps.java:53)
-	at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloCreateBoard.feature:3)
-... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">runners.WebRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to login with valid credentials&quot;</td><td>&quot;Optional[Login]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-79BEL83&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [de55869922f08c523ef39da46140cc97, sendKeysToElement {id=4e546717-ee12-429f-ba33-6b057f936144, value=[Ljava.lang.CharSequence;@1271176}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55233/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (de55869922f08c523ef39da46140cc97)] -&gt; xpath: //input[@id=&apos;password&apos;]]
-Session ID: de55869922f08c523ef39da46140cc97
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-	at stepDefinitions.Steps.enter_login_credentials(Steps.java:36)
-	at ✽.the user enters valid credentials(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloLogin.feature:4)
-... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">runners.WebRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to go to account settings using the account dropdown menu&quot;</td><td>&quot;Optional[Open Settings]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-79BEL83&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3d54255b467601e9e303e2a809fc8c2, sendKeysToElement {id=bd300e37-1de1-4015-95d1-4c80105ba41c, value=[Ljava.lang.CharSequence;@b0a000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55325/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b3d54255b467601e9e303e2a809fc8c2)] -&gt; xpath: //input[@id=&apos;password&apos;]]
-Session ID: b3d54255b467601e9e303e2a809fc8c2
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-	at stepDefinitions.Steps.check_user_is_on_dashboard_page(Steps.java:53)
-	at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloSettings.feature:3)
-... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test Automation</h2><h3 id="m0">runners.DesktopRunner#beforeMethodMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.&lt;init&gt;(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
+	at org.openqa.selenium.winium.WiniumDriverService.&lt;init&gt;(WiniumDriverService.java:114)
+	at org.openqa.selenium.winium.WiniumDriverService$Builder.buildDesktopService(WiniumDriverService.java:191)
+	at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
+	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runners.DesktopRunner#afterMethodMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">runners.DesktopRunner#afterTestMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">runners.WebRunner#afterTestMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">runners.DesktopRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able multiply two numbers together&quot;</td><td>&quot;Multiply&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.&lt;init&gt;(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
+	at org.openqa.selenium.winium.WiniumDriverService.&lt;init&gt;(WiniumDriverService.java:114)
+	at org.openqa.selenium.winium.WiniumDriverService$Builder.buildDesktopService(WiniumDriverService.java:191)
+	at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
+	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">runners.WebRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to go to account settings using the account dropdown menu&quot;</td><td>&quot;Open Settings&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">runners.WebRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to login with valid credentials&quot;</td><td>&quot;Login&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">runners.WebRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to go to create a new board from the dashboard page&quot;</td><td>&quot;Create board&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

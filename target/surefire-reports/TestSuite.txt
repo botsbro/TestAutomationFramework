@@ -1,43 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 19.604 s <<< FAILURE! - in TestSuite
-runScenario(runners.WebRunner)  Time elapsed: 2.591 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d180b61f44e62a634147748c1cfb2cc3, sendKeysToElement {id=32cc40ac-1adf-477f-abc0-cd0be51cbab1, value=[Ljava.lang.CharSequence;@523d46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55154/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d180b61f44e62a634147748c1cfb2cc3)] -> xpath: //input[@id='password']]
-Session ID: d180b61f44e62a634147748c1cfb2cc3
-
-runScenario(runners.WebRunner)  Time elapsed: 3.388 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [de55869922f08c523ef39da46140cc97, sendKeysToElement {id=4e546717-ee12-429f-ba33-6b057f936144, value=[Ljava.lang.CharSequence;@1271176}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55233/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (de55869922f08c523ef39da46140cc97)] -> xpath: //input[@id='password']]
-Session ID: de55869922f08c523ef39da46140cc97
-
-runScenario(runners.WebRunner)  Time elapsed: 2.801 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-79BEL83', ip: '192.168.1.27', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3d54255b467601e9e303e2a809fc8c2, sendKeysToElement {id=bd300e37-1de1-4015-95d1-4c80105ba41c, value=[Ljava.lang.CharSequence;@b0a000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55325/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b3d54255b467601e9e303e2a809fc8c2)] -> xpath: //input[@id='password']]
-Session ID: b3d54255b467601e9e303e2a809fc8c2
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 32.093 s <<< FAILURE! - in TestSuite
+beforeMethodMethod(runners.DesktopRunner)  Time elapsed: 7.465 s  <<< FAILURE!
+java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
+	at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
+	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
 

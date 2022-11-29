@@ -4,9 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-//import stepDefinitions.CommonTest;
-import utils.DriverBuilder;
-
 import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -100,7 +97,7 @@ public class ElementFetch {
         }
     }
 
-    public WebElement waitForAppElement(String identifierType, String identifierValue, int timeToWait) {
+/*    public WebElement waitForAppElement(String identifierType, String identifierValue, int timeToWait) {
         switch (identifierType) {
             case "ID":
                 WebElement elementToWaitFor = new WebDriverWait(androidDriver, Duration.ofSeconds(timeToWait)).until(ExpectedConditions.elementToBeClickable(By.id(identifierValue)));
@@ -108,7 +105,7 @@ public class ElementFetch {
             default:
                 return null;
         }
-    }
+    }*/
 
     public void androidHardWait(int timeToWait) {
         androidDriver.manage().timeouts().implicitlyWait(timeToWait, TimeUnit.SECONDS);

@@ -8,15 +8,20 @@
     <classes>
       <class name="runners.WebRunner">
         <methods>
-          <include name="afterMethodMethod"/>
+          <include name="afterTestMethod"/>
+        </methods>
+      </class> <!-- runners.WebRunner -->
+      <class name="runners.DesktopRunner">
+        <methods>
           <include name="setUpClass"/>
           <include name="afterTestMethod"/>
           <include name="beforeMethodMethod"/>
+          <include name="afterMethodMethod"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="runScenario"/>
           <include name="beforeTestMethod"/>
         </methods>
-      </class> <!-- runners.WebRunner -->
+      </class> <!-- runners.DesktopRunner -->
     </classes>
   </test> <!-- Test Automation(failed) -->
 </suite> <!-- Failed suite [Sample Test Suite] -->

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Sample_Test_Suite">
-              <span class="suite-name border-failed">Sample Test Suite</span>
+              <span class="suite-name border-skipped">Sample Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,31 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 3 failed,   </span>
+                    <span class="method-stats">4 methods,  1 skipped,  3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Sample_Test_Suite" class="hide-methods failed suite-Sample_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Sample_Test_Suite -->
-                      <a href="#" panel-name="suite-Sample_Test_Suite" class="show-methods failed suite-Sample_Test_Suite"> (show)</a> <!-- show-methods failed suite-Sample_Test_Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Sample_Test_Suite" class="hide-methods skipped suite-Sample_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Sample_Test_Suite -->
+                      <a href="#" panel-name="suite-Sample_Test_Suite" class="show-methods skipped suite-Sample_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Sample_Test_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Sample_Test_Suite">
+                    <div class="method-list-content skipped suite-Sample_Test_Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to go to create a new board from the dashboard page&quot;, &quot;Optional[Create board]&quot;)">runScenario("User should be able to go to create a new board from the dashboard page", "Optional[Create board]")</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.DesktopRunner" hash-for-method="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">runScenario("User should be able multiply two numbers together", "Multiply")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Sample_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Sample_Test_Suite" class="hide-methods passed suite-Sample_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Sample_Test_Suite -->
+                      <a href="#" panel-name="suite-Sample_Test_Suite" class="show-methods passed suite-Sample_Test_Suite"> (show)</a> <!-- show-methods passed suite-Sample_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Sample_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to go to account settings using the account dropdown menu&quot;, &quot;Open Settings&quot;)">runScenario("User should be able to go to account settings using the account dropdown menu", "Open Settings")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Optional[Login]&quot;)">runScenario("User should be able to login with valid credentials", "Optional[Login]")</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Login&quot;)">runScenario("User should be able to login with valid credentials", "Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to go to account settings using the account dropdown menu&quot;, &quot;Optional[Open Sett...)">runScenario("User should be able to go to account settings using the account dropdown menu", "Optional[Open Sett...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to go to create a new board from the dashboard page&quot;, &quot;Create board&quot;)">runScenario("User should be able to go to create a new board from the dashboard page", "Create board")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Sample_Test_Suite -->
+                    </div> <!-- method-list-content passed suite-Sample_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,116 +143,70 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Sample_Test_Suite" class="panel Sample_Test_Suite">
-          <div class="suite-Sample_Test_Suite-class-failed">
+          <div class="suite-Sample_Test_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">runners.WebRunner</span>
+              <img src="skipped.png"/>
+              <span class="class-name">runners.DesktopRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to go to create a new board from the dashboard page&quot;, &quot;Optional[Create board]&quot;)">
-                  </a> <!-- runScenario("User should be able to go to create a new board from the dashboard page", "Optional[Create board]") -->
+                  <a name="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">
+                  </a> <!-- runScenario("User should be able multiply two numbers together", "Multiply") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to go to create a new board from the dashboard page", "Optional[Create board]")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-79BEL83&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d180b61f44e62a634147748c1cfb2cc3, sendKeysToElement {id=32cc40ac-1adf-477f-abc0-cd0be51cbab1, value=[Ljava.lang.CharSequence;@523d46}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55154/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d180b61f44e62a634147748c1cfb2cc3)] -&gt; xpath: //input[@id=&apos;password&apos;]]
-Session ID: d180b61f44e62a634147748c1cfb2cc3
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-	at stepDefinitions.Steps.check_user_is_on_dashboard_page(Steps.java:53)
-	at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloCreateBoard.feature:3)
-... Removed 4 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Optional[Login]&quot;)">
-                  </a> <!-- runScenario("User should be able to login with valid credentials", "Optional[Login]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to login with valid credentials", "Optional[Login]")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-79BEL83&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [de55869922f08c523ef39da46140cc97, sendKeysToElement {id=4e546717-ee12-429f-ba33-6b057f936144, value=[Ljava.lang.CharSequence;@1271176}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55233/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (de55869922f08c523ef39da46140cc97)] -&gt; xpath: //input[@id=&apos;password&apos;]]
-Session ID: de55869922f08c523ef39da46140cc97
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-	at stepDefinitions.Steps.enter_login_credentials(Steps.java:36)
-	at ✽.the user enters valid credentials(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloLogin.feature:4)
-... Removed 4 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to go to account settings using the account dropdown menu&quot;, &quot;Optional[Open Sett...)">
-                  </a> <!-- runScenario("User should be able to go to account settings using the account dropdown menu", "Optional[Open Sett...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to go to account settings using the account dropdown menu", "Optional[Open Settings]")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=107.0.5304.122)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-79BEL83&apos;, ip: &apos;192.168.1.27&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3d54255b467601e9e303e2a809fc8c2, sendKeysToElement {id=bd300e37-1de1-4015-95d1-4c80105ba41c, value=[Ljava.lang.CharSequence;@b0a000}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.122, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\tom\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55325/devtoo..., se:cdpVersion: 107.0.5304.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b3d54255b467601e9e303e2a809fc8c2)] -&gt; xpath: //input[@id=&apos;password&apos;]]
-Session ID: b3d54255b467601e9e303e2a809fc8c2
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at pageEvents.LoginPageEvents.enterLoginCredentials(LoginPageEvents.java:26)
-	at stepDefinitions.Steps.check_user_is_on_dashboard_page(Steps.java:53)
-	at ✽.the user is on the dashboard page(file:///C:/Users/tom/IdeaProjects/TomBotsfordAutomationFramework2022/src/test/resources/webFeatures/trelloSettings.feature:3)
-... Removed 4 stack frames
+                  <span class="parameters">("User should be able multiply two numbers together", "Multiply")</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.&lt;init&gt;(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
+	at org.openqa.selenium.winium.WiniumDriverService.&lt;init&gt;(WiniumDriverService.java:114)
+	at org.openqa.selenium.winium.WiniumDriverService$Builder.buildDesktopService(WiniumDriverService.java:191)
+	at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
+	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Sample_Test_Suite-class-failed -->
+          </div> <!-- suite-Sample_Test_Suite-class-skipped -->
+          <div class="suite-Sample_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.WebRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User should be able to go to account settings using the account dropdown menu&quot;, &quot;Open Settings&quot;)">
+                  </a> <!-- runScenario("User should be able to go to account settings using the account dropdown menu", "Open Settings") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User should be able to go to account settings using the account dropdown menu", "Open Settings")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Login&quot;)">
+                  </a> <!-- runScenario("User should be able to login with valid credentials", "Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User should be able to login with valid credentials", "Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User should be able to go to create a new board from the dashboard page&quot;, &quot;Create board&quot;)">
+                  </a> <!-- runScenario("User should be able to go to create a new board from the dashboard page", "Create board") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User should be able to go to create a new board from the dashboard page", "Create board")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sample_Test_Suite-class-passed -->
         </div> <!-- panel Sample_Test_Suite -->
         <div panel-name="test-xml-Sample_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -255,6 +223,7 @@ Session ID: b3d54255b467601e9e303e2a809fc8c2
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test Automation&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;runners.WebRunner&quot;/&gt;
+      &lt;class name=&quot;runners.DesktopRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Automation --&gt;
 &lt;/suite&gt; &lt;!-- Sample Test Suite --&gt;
@@ -268,7 +237,7 @@ Session ID: b3d54255b467601e9e303e2a809fc8c2
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test Automation (1 class)</span>
+                <span class="test-name">Test Automation (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -302,24 +271,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.WebRunner')
-data.setCell(0, 3, 3387);
+data.setCell(0, 3, 8155);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.WebRunner')
-data.setCell(1, 3, 2800);
+data.setCell(1, 3, 6777);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runners.WebRunner')
-data.setCell(2, 3, 2583);
+data.setCell(2, 3, 6427);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.DesktopRunner')
+data.setCell(3, 3, 0);
 window.suiteTableData['Sample_Test_Suite']= { tableData: data, tableDiv: 'times-div-Sample_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Sample_Test_Suite">
               </div> <!-- times-div-Sample_Test_Suite -->
             </div> <!-- times-div -->
@@ -345,64 +318,97 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runners.WebRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runners.DesktopRunner</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.WebRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTestMethod</span>
+                <span class="method-start">202 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
-                <span class="method-start">207 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1364212)</span>
+                <span class="method-start">212 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
-                <span class="method-start">435 ms</span>
+                <span class="method-start">402 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("User should be able to go to create a new board from the dashboard page", "Optional[Create board]")</span>
-                <span class="method-start">3626 ms</span>
+                <span class="method-name">runScenario("User should be able to go to create a new board from the dashboard page", "Create board")</span>
+                <span class="method-start">3888 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">6217 ms</span>
+                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
+                <span class="method-start">12045 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
-                <span class="method-start">6895 ms</span>
+                <span class="method-start">12727 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("User should be able to login with valid credentials", "Optional[Login]")</span>
-                <span class="method-start">9030 ms</span>
+                <span class="method-name">runScenario("User should be able to login with valid credentials", "Login")</span>
+                <span class="method-start">14798 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">12418 ms</span>
+                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
+                <span class="method-start">21225 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
-                <span class="method-start">13072 ms</span>
+                <span class="method-start">21888 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("User should be able to go to account settings using the account dropdown menu", "Optional[Open Sett...)</span>
-                <span class="method-start">15382 ms</span>
+                <span class="method-name">runScenario("User should be able to go to account settings using the account dropdown menu", "Open Settings")</span>
+                <span class="method-start">24181 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">18182 ms</span>
+                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
+                <span class="method-start">30958 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">18825 ms</span>
+                <span class="method-start">31612 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.DesktopRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@1364212)</span>
+                <span class="method-start">31621 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
+                <span class="method-start">31638 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User should be able multiply two numbers together", "Multiply")</span>
+                <span class="method-start">31646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodMethod</span>
+                <span class="method-start">31647 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">31647 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestMethod</span>
-                <span class="method-start">18855 ms</span>
+                <span class="method-start">31648 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.WebRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTestMethod</span>
+                <span class="method-start">31648 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
