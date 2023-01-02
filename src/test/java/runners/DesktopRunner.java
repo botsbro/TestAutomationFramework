@@ -80,7 +80,7 @@ public class DesktopRunner extends AbstractTestNGCucumberTests{
         logger = extent.createTest(testMethod.getName());
         setupDriver();
         //DriverBuilder.desktopDriver.manage().window().maximize();
-        DriverBuilder.desktopDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //DriverBuilder.desktopDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterTest
@@ -109,6 +109,6 @@ public class DesktopRunner extends AbstractTestNGCucumberTests{
             logger.log(Status.SKIP,m);
         }
         service.stop();
-        DriverBuilder.desktopDriver.quit();
+        //DriverBuilder.desktopDriver.close();
     }
 }

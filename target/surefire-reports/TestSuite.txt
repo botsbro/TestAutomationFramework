@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 32.093 s <<< FAILURE! - in TestSuite
-beforeMethodMethod(runners.DesktopRunner)  Time elapsed: 7.465 s  <<< FAILURE!
-java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
-	at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
-	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.847 s - in TestSuite

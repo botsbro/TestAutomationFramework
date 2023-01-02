@@ -46,8 +46,8 @@ public class ElementFetch {
                 return desktopDriver.findElement(By.id(identifierValue));
             case "CSS":
                 return desktopDriver.findElement(By.cssSelector(identifierValue));
-            case "TAGNAME":
-                return desktopDriver.findElement(By.tagName(identifierValue));
+            case "NAME":
+                return desktopDriver.findElement(By.name(identifierValue));
             case "XPATH":
                 return desktopDriver.findElement(By.xpath(identifierValue));
             default:
@@ -61,7 +61,7 @@ public class ElementFetch {
             case "CSS":
                 return desktopDriver.findElements(By.cssSelector(identifierValue));
             case "TAGNAME":
-                return desktopDriver.findElements(By.tagName(identifierValue));
+                return desktopDriver.findElements(By.name(identifierValue));
             case "XPATH":
                 return desktopDriver.findElements(By.xpath(identifierValue));
             default:
@@ -74,8 +74,8 @@ public class ElementFetch {
                 return androidDriver.findElement(By.id(identifierValue));
             case "CSS":
                 return androidDriver.findElement(By.cssSelector(identifierValue));
-            case "TAGNAME":
-                return androidDriver.findElement(By.tagName(identifierValue));
+            case "NAME":
+                return androidDriver.findElement(By.name(identifierValue));
             case "XPATH":
                 return androidDriver.findElement(By.xpath(identifierValue));
             default:
@@ -88,8 +88,8 @@ public class ElementFetch {
                 return androidDriver.findElements(By.id(identifierValue));
             case "CSS":
                 return androidDriver.findElements(By.cssSelector(identifierValue));
-            case "TAGNAME":
-                return androidDriver.findElements(By.tagName(identifierValue));
+            case "NAME":
+                return androidDriver.findElements(By.name(identifierValue));
             case "XPATH":
                 return androidDriver.findElements(By.xpath(identifierValue));
             default:

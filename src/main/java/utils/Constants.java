@@ -11,5 +11,5 @@ public class Constants {
     public static String phoneOSVersion = "13";
     public static String nameOfTester = System.getProperty("user.name"); //name that gets displayed on extent report
     public static String testType = ""; //set by runners
-    public static String browser = "chrome"; //must be firefox or chrome
+    public static String browser = "firefox"; //must be firefox or chrome
 }

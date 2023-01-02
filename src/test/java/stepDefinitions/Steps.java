@@ -46,6 +46,7 @@ public class Steps extends CommonTest {
     }
     @When("the user clicks on the account dropdown button")
     public void click_account_dropdown() {
+        PageBuilder.dashboardPageEvents.verifyDashboardPageIsOpen();
         PageBuilder.dashboardPageEvents.openAccountDropdown();
     }
     @And("clicks settings")
@@ -93,6 +94,7 @@ public class Steps extends CommonTest {
     @Then("the two numbers should be multiplied correctly")
     public void check_numbers_are_multiplied(){
         PageBuilder.calculatorEvents.verifyAnswer();
+        PageBuilder.calculatorEvents.closeCalculator();
     }
 
 

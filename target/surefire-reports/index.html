@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Sample_Test_Suite">
-              <span class="suite-name border-skipped">Sample Test Suite</span>
+              <span class="suite-name border-passed">Sample Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,  1 skipped,  3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Sample_Test_Suite" class="hide-methods skipped suite-Sample_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Sample_Test_Suite -->
-                      <a href="#" panel-name="suite-Sample_Test_Suite" class="show-methods skipped suite-Sample_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Sample_Test_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Sample_Test_Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.DesktopRunner" hash-for-method="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">runScenario("User should be able multiply two numbers together", "Multiply")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Sample_Test_Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,17 +104,12 @@
                     <div class="method-list-content passed suite-Sample_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to go to account settings using the account dropdown menu&quot;, &quot;Open Settings&quot;)">runScenario("User should be able to go to account settings using the account dropdown menu", "Open Settings")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.DesktopRunner" hash-for-method="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">runScenario("User should be able multiply two numbers together", "Multiply")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Login&quot;)">runScenario("User should be able to login with valid credentials", "Login")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.WebRunner" hash-for-method="runScenario(&quot;User should be able to go to create a new board from the dashboard page&quot;, &quot;Create board&quot;)">runScenario("User should be able to go to create a new board from the dashboard page", "Create board")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.DesktopRunner" hash-for-method="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">runScenario("User should be able multiply two numbers together", "Multiply")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Sample_Test_Suite -->
@@ -143,9 +124,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Sample_Test_Suite" class="panel Sample_Test_Suite">
-          <div class="suite-Sample_Test_Suite-class-skipped">
+          <div class="suite-Sample_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">runners.DesktopRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -155,52 +136,16 @@
                   </a> <!-- runScenario("User should be able multiply two numbers together", "Multiply") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User should be able multiply two numbers together", "Multiply")</span>
-                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.&lt;init&gt;(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
-	at org.openqa.selenium.winium.WiniumDriverService.&lt;init&gt;(WiniumDriverService.java:114)
-	at org.openqa.selenium.winium.WiniumDriverService$Builder.buildDesktopService(WiniumDriverService.java:191)
-	at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
-	at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Sample_Test_Suite-class-skipped -->
-          <div class="suite-Sample_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runners.WebRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to go to account settings using the account dropdown menu&quot;, &quot;Open Settings&quot;)">
-                  </a> <!-- runScenario("User should be able to go to account settings using the account dropdown menu", "Open Settings") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to go to account settings using the account dropdown menu", "Open Settings")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to login with valid credentials&quot;, &quot;Login&quot;)">
-                  </a> <!-- runScenario("User should be able to login with valid credentials", "Login") -->
+                  <a name="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">
+                  </a> <!-- runScenario("User should be able multiply two numbers together", "Multiply") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to login with valid credentials", "Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User should be able to go to create a new board from the dashboard page&quot;, &quot;Create board&quot;)">
-                  </a> <!-- runScenario("User should be able to go to create a new board from the dashboard page", "Create board") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able to go to create a new board from the dashboard page", "Create board")</span>
+                  <span class="parameters">("User should be able multiply two numbers together", "Multiply")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -222,7 +167,6 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test Automation&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runners.WebRunner&quot;/&gt;
       &lt;class name=&quot;runners.DesktopRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Automation --&gt;
@@ -237,7 +181,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test Automation (2 classes)</span>
+                <span class="test-name">Test Automation (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,28 +215,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runners.WebRunner')
-data.setCell(0, 3, 8155);
+data.setCell(0, 2, 'runners.DesktopRunner')
+data.setCell(0, 3, 5961);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runners.WebRunner')
-data.setCell(1, 3, 6777);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'runners.WebRunner')
-data.setCell(2, 3, 6427);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'runners.DesktopRunner')
-data.setCell(3, 3, 0);
+data.setCell(1, 2, 'runners.DesktopRunner')
+data.setCell(1, 3, 5627);
 window.suiteTableData['Sample_Test_Suite']= { tableData: data, tableDiv: 'times-div-Sample_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Sample_Test_Suite">
               </div> <!-- times-div-Sample_Test_Suite -->
             </div> <!-- times-div -->
@@ -323,92 +259,41 @@ return data;
                 <span class="method-name">beforeTestMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runners.WebRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTestMethod</span>
-                <span class="method-start">202 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1364212)</span>
-                <span class="method-start">212 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@1cbfddf)</span>
+                <span class="method-start">232 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
-                <span class="method-start">402 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User should be able to go to create a new board from the dashboard page", "Create board")</span>
-                <span class="method-start">3888 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">12045 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
-                <span class="method-start">12727 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User should be able to login with valid credentials", "Login")</span>
-                <span class="method-start">14798 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">21225 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
-                <span class="method-start">21888 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User should be able to go to account settings using the account dropdown menu", "Open Settings")</span>
-                <span class="method-start">24181 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">30958 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">31612 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runners.DesktopRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1364212)</span>
-                <span class="method-start">31621 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
-                <span class="method-start">31638 ms</span>
+                <span class="method-start">419 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("User should be able multiply two numbers together", "Multiply")</span>
-                <span class="method-start">31646 ms</span>
+                <span class="method-start">1682 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod</span>
-                <span class="method-start">31647 ms</span>
+                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
+                <span class="method-start">7646 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
+                <span class="method-start">7714 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User should be able multiply two numbers together", "Multiply")</span>
+                <span class="method-start">8450 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
+                <span class="method-start">14077 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">31647 ms</span>
+                <span class="method-start">14139 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestMethod</span>
-                <span class="method-start">31648 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runners.WebRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTestMethod</span>
-                <span class="method-start">31648 ms</span>
+                <span class="method-start">14146 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

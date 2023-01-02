@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample Test Suite" duration-ms="31650" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:41 GMT">
+  <suite name="Sample Test Suite" duration-ms="14440" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:39 GMT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@123a213]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test Automation" duration-ms="31650" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:41 GMT">
+    <test name="Test Automation" duration-ms="14440" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:39 GMT">
       <class name="runners.DesktopRunner">
-        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.DesktopRunner@123a213]" name="beforeTestMethod" is-config="true" duration-ms="201" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:10 GMT">
+        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.DesktopRunner@12d3247]" name="beforeTestMethod" is-config="true" duration-ms="221" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:25 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.DesktopRunner@123a213]" name="setUpClass" is-config="true" duration-ms="17" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.DesktopRunner@12d3247]" name="setUpClass" is-config="true" duration-ms="179" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:25 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1364212]]>
+                <![CDATA[org.testng.TestRunner@1cbfddf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.DesktopRunner@123a213]" name="beforeMethodMethod" is-config="true" duration-ms="1" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.DesktopRunner@12d3247]" name="beforeMethodMethod" is-config="true" duration-ms="1263" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:26 GMT">
           <params>
             <param index="0">
               <value>
@@ -34,59 +33,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA[org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
-at org.openqa.selenium.winium.WiniumDriverService.<init>(WiniumDriverService.java:114)
-at org.openqa.selenium.winium.WiniumDriverService$Builder.buildDesktopService(WiniumDriverService.java:191)
-at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
-at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@123a213]" name="runScenario" duration-ms="0" started-at="2022-11-29T01:45:41 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-29T01:45:41 GMT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247]" name="runScenario" duration-ms="5961" started-at="2023-01-02T19:42:26 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-02T19:42:32 GMT">
           <params>
             <param index="0">
               <value>
@@ -99,210 +49,67 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA[org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: org.openqa.selenium.remote.service.DriverService.<init>(Ljava/io/File;ILcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableMap;)V
-at org.openqa.selenium.winium.WiniumDriverService.<init>(WiniumDriverService.java:114)
-at org.openqa.selenium.winium.WiniumDriverService$Builder.buildDesktopService(WiniumDriverService.java:191)
-at runners.DesktopRunner.setupDriver(DesktopRunner.java:49)
-at runners.DesktopRunner.beforeMethodMethod(DesktopRunner.java:81)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="SKIP" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.DesktopRunner@123a213]" name="afterMethodMethod" is-config="true" duration-ms="0" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.DesktopRunner@12d3247]" name="afterMethodMethod" is-config="true" duration-ms="68" started-at="2023-01-02T19:42:32 GMT" finished-at="2023-01-02T19:42:32 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.DesktopRunner@123a213]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.DesktopRunner@12d3247]" name="beforeMethodMethod" is-config="true" duration-ms="736" started-at="2023-01-02T19:42:32 GMT" finished-at="2023-01-02T19:42:33 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodMethod -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247]" name="runScenario" duration-ms="5627" started-at="2023-01-02T19:42:33 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-02T19:42:39 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able multiply two numbers together"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Multiply"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.DesktopRunner@12d3247]" name="afterMethodMethod" is-config="true" duration-ms="61" started-at="2023-01-02T19:42:39 GMT" finished-at="2023-01-02T19:42:39 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.DesktopRunner@12d3247]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2023-01-02T19:42:39 GMT" finished-at="2023-01-02T19:42:39 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="SKIP" signature="afterTestMethod()[pri:0, instance:runners.DesktopRunner@123a213]" name="afterTestMethod" is-config="true" duration-ms="0" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
+        <test-method status="PASS" signature="afterTestMethod()[pri:0, instance:runners.DesktopRunner@12d3247]" name="afterTestMethod" is-config="true" duration-ms="289" started-at="2023-01-02T19:42:39 GMT" finished-at="2023-01-02T19:42:39 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
       </class> <!-- runners.DesktopRunner -->
-      <class name="runners.WebRunner">
-        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.WebRunner@1cd19b3]" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:10 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.WebRunner@1cd19b3]" name="setUpClass" is-config="true" duration-ms="182" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:10 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1364212]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1cd19b3]" name="beforeMethodMethod" is-config="true" duration-ms="3486" started-at="2022-11-29T01:45:10 GMT" finished-at="2022-11-29T01:45:14 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3]" name="runScenario" duration-ms="8155" started-at="2022-11-29T01:45:14 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-29T01:45:22 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to go to create a new board from the dashboard page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Create board"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1cd19b3]" name="afterMethodMethod" is-config="true" duration-ms="682" started-at="2022-11-29T01:45:22 GMT" finished-at="2022-11-29T01:45:23 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1cd19b3]" name="beforeMethodMethod" is-config="true" duration-ms="2071" started-at="2022-11-29T01:45:23 GMT" finished-at="2022-11-29T01:45:25 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3]" name="runScenario" duration-ms="6427" started-at="2022-11-29T01:45:25 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-29T01:45:31 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to login with valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1cd19b3]" name="afterMethodMethod" is-config="true" duration-ms="663" started-at="2022-11-29T01:45:31 GMT" finished-at="2022-11-29T01:45:32 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.WebRunner@1cd19b3]" name="beforeMethodMethod" is-config="true" duration-ms="2292" started-at="2022-11-29T01:45:32 GMT" finished-at="2022-11-29T01:45:34 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3]" name="runScenario" duration-ms="6777" started-at="2022-11-29T01:45:34 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-29T01:45:41 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to go to account settings using the account dropdown menu"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Open Settings"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.WebRunner@1cd19b3]" name="afterMethodMethod" is-config="true" duration-ms="653" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.WebRunner@1cd19b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.WebRunner@1cd19b3]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="SKIP" signature="afterTestMethod()[pri:0, instance:runners.WebRunner@1cd19b3]" name="afterTestMethod" is-config="true" duration-ms="0" started-at="2022-11-29T01:45:41 GMT" finished-at="2022-11-29T01:45:41 GMT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestMethod -->
-      </class> <!-- runners.WebRunner -->
     </test> <!-- Test Automation -->
   </suite> <!-- Sample Test Suite -->
 </testng-results>

@@ -4,7 +4,6 @@ import utils.pageObjects.CalculatorElements;
 import utils.ElementFetch;
 import org.testng.Assert;
 
-
 import java.util.Objects;
 
 public class CalculatorEvents {
@@ -16,9 +15,9 @@ public class CalculatorEvents {
 
     public void multiplyNumbers(){
         ElementFetch elementFetch = new ElementFetch();
-        elementFetch.getDesktopAppElement("NAME", CalculatorElements.number2).click();
+        elementFetch.getDesktopAppElement("ID", CalculatorElements.number2).click();
         elementFetch.getDesktopAppElement("ID",CalculatorElements.multiply).click();
-        elementFetch.getDesktopAppElement("NAME",CalculatorElements.number3).click();
+        elementFetch.getDesktopAppElement("ID",CalculatorElements.number3).click();
     }
 
     public void clickEquals(){
@@ -28,8 +27,12 @@ public class CalculatorEvents {
 
     public void verifyAnswer(){
         ElementFetch elementFetch = new ElementFetch();
-        Assert.assertTrue(Objects.equals(elementFetch.getDesktopAppElement("ID", CalculatorElements.output).getText(), "6"));
+        Assert.assertTrue(Objects.equals(elementFetch.getDesktopAppElement("ID", CalculatorElements.output).getAttribute("Name"), "Display is 6"));
     }
 
+    public void closeCalculator(){
+        ElementFetch elementFetch = new ElementFetch();
+        elementFetch.getDesktopAppElement("ID",CalculatorElements.close).click();
+    }
 
 }
