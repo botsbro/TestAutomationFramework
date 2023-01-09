@@ -133,9 +133,8 @@ public class Steps extends CommonTest {
     public void check_for_correct_postcode(String expectedPostcode){
         PageBuilder.zippopotamusEvents.checkForCorrectPostcode(expectedPostcode);
     }
-
     @Then("the API should return a HTTP status code of {string}")
-    public void check_api_returns_valid_status_code(int expectedStatusCode) {
+    public void check_api_returns_valid_status_code(String expectedStatusCode) {
         PageBuilder.zippopotamusEvents.checkForCorrectStatusCode(expectedStatusCode);
     }
 }

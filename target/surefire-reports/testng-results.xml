@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample Test Suite" duration-ms="14440" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:39 GMT">
+  <suite name="Sample Test Suite" duration-ms="2271" started-at="2023-01-09T04:51:52 GMT" finished-at="2023-01-09T04:51:54 GMT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@ad1f1f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test Automation" duration-ms="14440" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:39 GMT">
-      <class name="runners.DesktopRunner">
-        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.DesktopRunner@12d3247]" name="beforeTestMethod" is-config="true" duration-ms="221" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:25 GMT">
+    <test name="Test Automation" duration-ms="2271" started-at="2023-01-09T04:51:52 GMT" finished-at="2023-01-09T04:51:54 GMT">
+      <class name="runners.ApiRunner">
+        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:runners.ApiRunner@ad1f1f]" name="beforeTestMethod" is-config="true" duration-ms="212" started-at="2023-01-09T04:51:52 GMT" finished-at="2023-01-09T04:51:52 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.DesktopRunner@12d3247]" name="setUpClass" is-config="true" duration-ms="179" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:25 GMT">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.ApiRunner@ad1f1f]" name="setUpClass" is-config="true" duration-ms="183" started-at="2023-01-09T04:51:52 GMT" finished-at="2023-01-09T04:51:52 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1cbfddf]]>
+                <![CDATA[org.testng.TestRunner@d9e63e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.DesktopRunner@12d3247]" name="beforeMethodMethod" is-config="true" duration-ms="1263" started-at="2023-01-02T19:42:25 GMT" finished-at="2023-01-02T19:42:26 GMT">
+        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.ApiRunner@ad1f1f]" name="beforeMethodMethod" is-config="true" duration-ms="5" started-at="2023-01-09T04:51:52 GMT" finished-at="2023-01-09T04:51:52 GMT">
           <params>
             <param index="0">
               <value>
@@ -36,80 +36,42 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247]" name="runScenario" duration-ms="5961" started-at="2023-01-02T19:42:26 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-02T19:42:32 GMT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@ad1f1f]" name="runScenario" duration-ms="1538" started-at="2023-01-09T04:51:52 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-09T04:51:54 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User should be able multiply two numbers together"]]>
+                <![CDATA["A valid API request should return an OK HTTP status code"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Multiply"]]>
+                <![CDATA["Return OK status"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.DesktopRunner@12d3247]" name="afterMethodMethod" is-config="true" duration-ms="68" started-at="2023-01-02T19:42:32 GMT" finished-at="2023-01-02T19:42:32 GMT">
+        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.ApiRunner@ad1f1f]" name="afterMethodMethod" is-config="true" duration-ms="6" started-at="2023-01-09T04:51:54 GMT" finished-at="2023-01-09T04:51:54 GMT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247] output={null}]]]>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ApiRunner@ad1f1f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="beforeMethodMethod(java.lang.reflect.Method)[pri:0, instance:runners.DesktopRunner@12d3247]" name="beforeMethodMethod" is-config="true" duration-ms="736" started-at="2023-01-02T19:42:32 GMT" finished-at="2023-01-02T19:42:33 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodMethod -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247]" name="runScenario" duration-ms="5627" started-at="2023-01-02T19:42:33 GMT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-02T19:42:39 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able multiply two numbers together"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Multiply"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterMethodMethod(org.testng.ITestResult)[pri:0, instance:runners.DesktopRunner@12d3247]" name="afterMethodMethod" is-config="true" duration-ms="61" started-at="2023-01-02T19:42:39 GMT" finished-at="2023-01-02T19:42:39 GMT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.DesktopRunner@12d3247] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodMethod -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.DesktopRunner@12d3247]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2023-01-02T19:42:39 GMT" finished-at="2023-01-02T19:42:39 GMT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.ApiRunner@ad1f1f]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2023-01-09T04:51:54 GMT" finished-at="2023-01-09T04:51:54 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="afterTestMethod()[pri:0, instance:runners.DesktopRunner@12d3247]" name="afterTestMethod" is-config="true" duration-ms="289" started-at="2023-01-02T19:42:39 GMT" finished-at="2023-01-02T19:42:39 GMT">
+        <test-method status="PASS" signature="afterTestMethod()[pri:0, instance:runners.ApiRunner@ad1f1f]" name="afterTestMethod" is-config="true" duration-ms="292" started-at="2023-01-09T04:51:54 GMT" finished-at="2023-01-09T04:51:54 GMT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestMethod -->
-      </class> <!-- runners.DesktopRunner -->
+      </class> <!-- runners.ApiRunner -->
     </test> <!-- Test Automation -->
   </suite> <!-- Sample Test Suite -->
 </testng-results>

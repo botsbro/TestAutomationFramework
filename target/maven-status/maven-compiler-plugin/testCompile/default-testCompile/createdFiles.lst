@@ -1,8 +1,8 @@
 runners\DesktopRunner.class
+runners\AndroidRunner.class
+utils\SuiteListener.class
 runners\TestRunner.class
 stepDefinitions\Steps.class
 stepDefinitions\CommonTest.class
 runners\WebRunner.class
-runners\AndroidRunner.class
 runners\ApiRunner.class
-utils\SuiteListener.class

@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content passed suite-Sample_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.DesktopRunner" hash-for-method="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">runScenario("User should be able multiply two numbers together", "Multiply")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.DesktopRunner" hash-for-method="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">runScenario("User should be able multiply two numbers together", "Multiply")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_Test_Suite" title="runners.ApiRunner" hash-for-method="runScenario(&quot;A valid API request should return an OK HTTP status code&quot;, &quot;Return OK status&quot;)">runScenario("A valid API request should return an OK HTTP status code", "Return OK status")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Sample_Test_Suite -->
@@ -127,25 +122,15 @@
           <div class="suite-Sample_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">runners.DesktopRunner</span>
+              <span class="class-name">runners.ApiRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">
-                  </a> <!-- runScenario("User should be able multiply two numbers together", "Multiply") -->
+                  <a name="runScenario(&quot;A valid API request should return an OK HTTP status code&quot;, &quot;Return OK status&quot;)">
+                  </a> <!-- runScenario("A valid API request should return an OK HTTP status code", "Return OK status") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able multiply two numbers together", "Multiply")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User should be able multiply two numbers together&quot;, &quot;Multiply&quot;)">
-                  </a> <!-- runScenario("User should be able multiply two numbers together", "Multiply") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User should be able multiply two numbers together", "Multiply")</span>
+                  <span class="parameters">("A valid API request should return an OK HTTP status code", "Return OK status")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -167,7 +152,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test Automation&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runners.DesktopRunner&quot;/&gt;
+      &lt;class name=&quot;runners.ApiRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Automation --&gt;
 &lt;/suite&gt; &lt;!-- Sample Test Suite --&gt;
@@ -215,20 +200,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runners.DesktopRunner')
-data.setCell(0, 3, 5961);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runners.DesktopRunner')
-data.setCell(1, 3, 5627);
+data.setCell(0, 2, 'runners.ApiRunner')
+data.setCell(0, 3, 1538);
 window.suiteTableData['Sample_Test_Suite']= { tableData: data, tableDiv: 'times-div-Sample_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Sample_Test_Suite">
               </div> <!-- times-div-Sample_Test_Suite -->
             </div> <!-- times-div -->
@@ -254,46 +235,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runners.DesktopRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runners.ApiRunner</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1cbfddf)</span>
-                <span class="method-start">232 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@d9e63e)</span>
+                <span class="method-start">222 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
+                <span class="method-start">413 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("A valid API request should return an OK HTTP status code", "Return OK status")</span>
                 <span class="method-start">419 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User should be able multiply two numbers together", "Multiply")</span>
-                <span class="method-start">1682 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">7646 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethodMethod(public void io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrap...)</span>
-                <span class="method-start">7714 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User should be able multiply two numbers together", "Multiply")</span>
-                <span class="method-start">8450 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethodMethod([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">14077 ms</span>
+                <span class="method-start">1959 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">14139 ms</span>
+                <span class="method-start">1966 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTestMethod</span>
-                <span class="method-start">14146 ms</span>
+                <span class="method-start">1974 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

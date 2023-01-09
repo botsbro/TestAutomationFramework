@@ -42,9 +42,10 @@ public class ZippopotamusEvents {
         Assert.assertEquals(returnedPostcode, expectedPostcode);
     }
 
-    public void checkForCorrectStatusCode(int expectedStatusCode){
+    public void checkForCorrectStatusCode(String expectedStatusCode){
+        int expectedStatusCodeInt = Integer.parseInt(expectedStatusCode); //parseInt because the feature file reads the number as a string
         int returnedStatusCode = apiResponse.statusCode();
-        Assert.assertEquals(returnedStatusCode, expectedStatusCode);
+        Assert.assertEquals(returnedStatusCode, expectedStatusCodeInt);
     }
 
 

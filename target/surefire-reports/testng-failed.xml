@@ -6,17 +6,17 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Test Automation(failed)">
     <classes>
-      <class name="runners.DesktopRunner">
+      <class name="runners.ApiRunner">
         <methods>
           <include name="afterTestMethod"/>
           <include name="setUpClass"/>
           <include name="beforeMethodMethod"/>
-          <include name="afterMethodMethod"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
           <include name="beforeTestMethod"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="afterMethodMethod"/>
         </methods>
-      </class> <!-- runners.DesktopRunner -->
+      </class> <!-- runners.ApiRunner -->
     </classes>
   </test> <!-- Test Automation(failed) -->
 </suite> <!-- Failed suite [Sample Test Suite] -->
